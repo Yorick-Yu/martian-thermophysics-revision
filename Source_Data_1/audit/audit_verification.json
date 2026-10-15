@@ -1,0 +1,13 @@
+{
+  "scope": "saved-state CPU postprocessing only; no thermal simulations",
+  "max_reprojection_error": 8.131516293641283e-20,
+  "nominal_uncertainties_reproduced_tolerance": 1e-18,
+  "legacy_bootstrap_reproduced": true,
+  "corrected_bootstrap_resamples": 10000,
+  "block_side_pixels": 3,
+  "scale_count": 4,
+  "evaluation_images_256": 5,
+  "kaiser_images_128": 3,
+  "direct_baseline_confidence_positive_at_nominal": false,
+  "kaiser_evening_scale_classification_invariant": false
+}

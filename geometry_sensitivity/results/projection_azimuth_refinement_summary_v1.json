@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "method": "Frozen observation projection; compare existing 24/128 and 192/128 runs plus new 48/128 and 96/128 runs. No calibration refit.",
+  "sites": {
+    "gasa": {
+      "product_id": "I88618002SNU",
+      "u_val_conservative": 4.252676151837666e-07,
+      "series_by_azimuth": {
+        "24": {
+          "gain": 1.3646976235151665e-07,
+          "lcb": 5.656787052732358e-08,
+          "class": "POSITIVE_WITHIN_UNCERTAINTY"
+        },
+        "48": {
+          "gain": 1.4154251452203487e-07,
+          "lcb": 5.713806953904572e-08,
+          "class": "POSITIVE_WITHIN_UNCERTAINTY",
+          "correlation_lcb": 0.29209018128666636
+        },
+        "96": {
+          "gain": 1.4152231782536108e-07,
+          "lcb": 5.713574839889891e-08,
+          "class": "POSITIVE_WITHIN_UNCERTAINTY",
+          "correlation_lcb": 0.2918984563652375
+        },
+        "192": {
+          "gain": 1.422484978118447e-07,
+          "lcb": 5.755117494333577e-08,
+          "class": "POSITIVE_WITHIN_UNCERTAINTY",
+          "correlation_lcb": 0.29117522945702434
+        }
+      },
+      "adjacent_changes": {
+        "24_to_48": {
+          "gain_delta": 5.072752170518223e-09,
+          "lcb_delta": 5.701990117221403e-10,
+          "gain_delta_abs_over_U": 0.011928376366787737,
+          "lcb_delta_abs_over_U": 0.0013408004544990947,
+          "class_unchanged": true
+        },
+        "48_to_96": {
+          "gain_delta": -2.019669667379196e-11,
+          "lcb_delta": -2.3211401468110754e-12,
+          "gain_delta_abs_over_U": 4.7491734504788395e-05,
+          "lcb_delta_abs_over_U": 5.458069375463882e-06,
+          "class_unchanged": true
+        },
+        "96_to_192": {
+          "gain_delta": 7.261799864836244e-10,
+          "lcb_delta": 4.1542654443685657e-10,
+          "gain_delta_abs_over_U": 0.0017075835557565974,
+          "lcb_delta_abs_over_U": 0.0009768591108385775,
+          "class_unchanged": true
+        }
+      },
+      "all_classes_unchanged": true,
+      "all_adjacent_gain_and_lcb_changes_below_U": true
+    },
+    "kaiser": {
+      "product_id": "IA5986002SNU",
+      "u_val_conservative": 2.0594118204307127e-06,
+      "series_by_azimuth": {
+        "24": {
+          "gain": 3.0364443174676384e-06,
+          "lcb": 2.3996495785219065e-06,
+          "class": "BEYOND_UNCERTAINTY"
+        },
+        "48": {
+          "gain": 3.016605635178511e-06,
+          "lcb": 2.383557198997692e-06,
+          "class": "BEYOND_UNCERTAINTY",
+          "correlation_lcb": 0.7615269460396528
+        },
+        "96": {
+          "gain": 3.0218785674374863e-06,
+          "lcb": 2.390677969993092e-06,
+          "class": "BEYOND_UNCERTAINTY",
+          "correlation_lcb": 0.7621124124025342
+        },
+        "192": {
+          "gain": 3.0220243943317813e-06,
+          "lcb": 2.3908472089289014e-06,
+          "class": "BEYOND_UNCERTAINTY",
+          "correlation_lcb": 0.7621223945479171
+        }
+      },
+      "adjacent_changes": {
+        "24_to_48": {
+          "gain_delta": -1.9838682289127213e-08,
+          "lcb_delta": -1.609237952421443e-08,
+          "gain_delta_abs_over_U": 0.00963317880004111,
+          "lcb_delta_abs_over_U": 0.007814065824313281,
+          "class_unchanged": true
+        },
+        "48_to_96": {
+          "gain_delta": 5.272932258975071e-09,
+          "lcb_delta": 7.120770995400152e-09,
+          "gain_delta_abs_over_U": 0.0025604069116551306,
+          "lcb_delta_abs_over_U": 0.0034576721978369965,
+          "class_unchanged": true
+        },
+        "96_to_192": {
+          "gain_delta": 1.458268942950672e-10,
+          "lcb_delta": 1.6923893580922256e-10,
+          "gain_delta_abs_over_U": 7.080997246319021e-05,
+          "lcb_delta_abs_over_U": 8.21782870867602e-05,
+          "class_unchanged": true
+        }
+      },
+      "all_classes_unchanged": true,
+      "all_adjacent_gain_and_lcb_changes_below_U": true
+    }
+  }
+}

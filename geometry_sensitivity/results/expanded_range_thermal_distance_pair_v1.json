@@ -1,0 +1,142 @@
+{
+  "distance_cells": {
+    "long": 362,
+    "short": 128
+  },
+  "purpose": "Compare final thermal fields at maximum horizon distances 128 and 362 cells for the same expanded HiRISE DTM, using the common valid terrain scenario IDs.",
+  "schema_version": 1,
+  "sites": {
+    "gasa": {
+      "distance_pair_thermal_changes": {
+        "baseline_final_frost_mass_kg_m2": {
+          "fraction_abs_gt_1e-10": 0.0,
+          "max_abs": 0.0,
+          "mean_signed_362_minus_128": 0.0,
+          "p50_abs": 0.0,
+          "p95_abs": 0.0,
+          "p99_abs": 0.0,
+          "rmse": 0.0
+        },
+        "baseline_final_surface_temperature_k": {
+          "fraction_abs_gt_1e-10": 0.0,
+          "max_abs": 0.0,
+          "mean_signed_362_minus_128": 0.0,
+          "p50_abs": 0.0,
+          "p95_abs": 0.0,
+          "p99_abs": 0.0,
+          "rmse": 0.0
+        },
+        "baseline_frost_presence_flip_count": 0,
+        "baseline_maximum_frost_mass_kg_m2": {
+          "fraction_abs_gt_1e-10": 0.0,
+          "max_abs": 0.0,
+          "mean_signed_362_minus_128": 0.0,
+          "p50_abs": 0.0,
+          "p95_abs": 0.0,
+          "p99_abs": 0.0,
+          "rmse": 0.0
+        },
+        "shadow_final_frost_mass_kg_m2": {
+          "fraction_abs_gt_1e-10": 0.01406965111067854,
+          "max_abs": 11.505477419104992,
+          "mean_signed_362_minus_128": 0.011277644467589401,
+          "p50_abs": 0.0,
+          "p95_abs": 0.0,
+          "p99_abs": 0.015485206787154482,
+          "rmse": 0.21191114248288517
+        },
+        "shadow_final_surface_temperature_k": {
+          "fraction_abs_gt_1e-10": 0.6002191026749539,
+          "max_abs": 58.71697204458192,
+          "mean_signed_362_minus_128": -1.8121635186788516,
+          "p50_abs": 0.25159113614049033,
+          "p95_abs": 12.028512157768262,
+          "p99_abs": 19.705771231492207,
+          "rmse": 4.825773506178203
+        },
+        "shadow_frost_presence_flip_count": 299,
+        "shadow_maximum_frost_mass_kg_m2": {
+          "fraction_abs_gt_1e-10": 0.05236282316512827,
+          "max_abs": 11.158003464125219,
+          "mean_signed_362_minus_128": 0.011740934072241,
+          "p50_abs": 0.0,
+          "p95_abs": 0.00029076332463784203,
+          "p99_abs": 0.06102430793441016,
+          "rmse": 0.2065648067323294
+        }
+      },
+      "dtm_sha256": "d2aeb353adc883b5229fcd4927504466d8780d459c0add4e56d33c74f42cff05",
+      "dtm_sha256_identical": true,
+      "grid_shape": null,
+      "scenario_count_common_valid_cells": 220901,
+      "scenario_ids_identical": true,
+      "scenario_ids_unique": true
+    },
+    "kaiser": {
+      "distance_pair_thermal_changes": {
+        "baseline_final_frost_mass_kg_m2": {
+          "fraction_abs_gt_1e-10": 0.0,
+          "max_abs": 0.0,
+          "mean_signed_362_minus_128": 0.0,
+          "p50_abs": 0.0,
+          "p95_abs": 0.0,
+          "p99_abs": 0.0,
+          "rmse": 0.0
+        },
+        "baseline_final_surface_temperature_k": {
+          "fraction_abs_gt_1e-10": 0.0,
+          "max_abs": 0.0,
+          "mean_signed_362_minus_128": 0.0,
+          "p50_abs": 0.0,
+          "p95_abs": 0.0,
+          "p99_abs": 0.0,
+          "rmse": 0.0
+        },
+        "baseline_frost_presence_flip_count": 0,
+        "baseline_maximum_frost_mass_kg_m2": {
+          "fraction_abs_gt_1e-10": 0.0,
+          "max_abs": 0.0,
+          "mean_signed_362_minus_128": 0.0,
+          "p50_abs": 0.0,
+          "p95_abs": 0.0,
+          "p99_abs": 0.0,
+          "rmse": 0.0
+        },
+        "shadow_final_frost_mass_kg_m2": {
+          "fraction_abs_gt_1e-10": 2.0676730595358263e-05,
+          "max_abs": 1.5794409773220837,
+          "mean_signed_362_minus_128": 1.731057614408384e-05,
+          "p50_abs": 0.0,
+          "p95_abs": 0.0,
+          "p99_abs": 0.0,
+          "rmse": 0.004042845970849096
+        },
+        "shadow_final_surface_temperature_k": {
+          "fraction_abs_gt_1e-10": 0.4690704305835161,
+          "max_abs": 19.12590331085363,
+          "mean_signed_362_minus_128": -0.2246358537970028,
+          "p50_abs": 0.0,
+          "p95_abs": 1.402913572688757,
+          "p99_abs": 2.672576599087936,
+          "rmse": 0.5763642973150389
+        },
+        "shadow_frost_presence_flip_count": 1,
+        "shadow_maximum_frost_mass_kg_m2": {
+          "fraction_abs_gt_1e-10": 2.4436136158150673e-05,
+          "max_abs": 2.5365648377063685,
+          "mean_signed_362_minus_128": 2.1538879448724066e-05,
+          "p50_abs": 0.0,
+          "p95_abs": 0.0,
+          "p99_abs": 0.0,
+          "rmse": 0.005369347190756731
+        }
+      },
+      "dtm_sha256": "b401214832bc3d867d862ad14dd2ded7782be459aaa94edb66b7f3091772e27e",
+      "dtm_sha256_identical": true,
+      "grid_shape": null,
+      "scenario_count_common_valid_cells": 531999,
+      "scenario_ids_identical": true,
+      "scenario_ids_unique": true
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 2026081203,
+  "claim_boundary": "Frozen observation operator and calibration applied to full expanded same-product HiRISE DTM simulation. Directional DTM coverage varies by product boundary and valid mask; see terrain coverage audit.",
+  "dtm_path": "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/inputs/wider_dem/kaiser/DTEEC_013017_1325_013083_1325_U01.KAISER_CRATER_DUNES_EVENT_800x800_expanded_v1.npz",
+  "emissivity": 0.95,
+  "frozen_gain": [
+    0.40868345175003573,
+    0.5445539166545512
+  ],
+  "frozen_offset": [
+    8.709316850140791e-06,
+    2.0143068522460303e-05
+  ],
+  "frozen_registration_east_offset_m": -100.0,
+  "frozen_registration_south_offset_m": 450.0,
+  "minimum_pixel_support_fraction": 0.95,
+  "moving_block_side_pixels": 3,
+  "output_dir": "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/results/expanded_range_projection/kaiser_distance_128",
+  "patch_radius_pixels": 8,
+  "pds_temperature_radiance_table": "/autodl-fs/data/qq/formal-mars-experiments-20260808/FORMAL-E6-INSTRUMENT-ASSET-FETCH-V1/assets/temp2rad_file",
+  "pixel_scale_m": 100.0,
+  "project_root": "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/code",
+  "psf_sigma_m": 49.39391655001425,
+  "quadrature_axis_count": 32,
+  "run_id": "GEOM-SENS-20261013-KAISER-EXPANDED-DTM-24AZ-128CELL-FROZEN-PROJECTION",
+  "schema_version": 1,
+  "smoothing_sigma_pixels": 3.0,
+  "surface_band_indices_zero_based": [
+    3,
+    8
+  ],
+  "u_val_conservative": 2.0594118204307127e-06,
+  "validation_products": [
+    {
+      "base_registration_east_m": -57.1371,
+      "base_registration_south_m": -15.7231,
+      "cube_offset_bytes": 65536,
+      "cube_path": "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/inputs/observation/kaiser/IA5986002SNU.CUB",
+      "cube_shape": [
+        10,
+        4172,
+        858
+      ],
+      "event_pixel_line_sample_zero_based": [
+        2694,
+        402
+      ],
+      "product_id": "IA5986002SNU",
+      "state_globs": [
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/kaiser_distance_128/attempt-001/shard*/states/chunk-*.pt"
+      ]
+    }
+  ],
+  "dtm_sha256": "b401214832bc3d867d862ad14dd2ded7782be459aaa94edb66b7f3091772e27e"
+}

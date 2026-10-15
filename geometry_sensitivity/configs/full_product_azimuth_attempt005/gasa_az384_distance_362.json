@@ -1,0 +1,90 @@
+{
+  "acquisition_alignment": {
+    "product_id": "I88618002",
+    "spinup_complete_sols": 29,
+    "target_local_true_solar_time_hours": 7.205,
+    "target_observation_utc": "2021-12-06T02:27:53.764Z",
+    "target_solar_longitude_deg": 137.641
+  },
+  "acquisition_time_audit_path": "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/inputs/gasa/E0-GAS-04C-I88618002-acquisition-metadata.json",
+  "acquisition_time_audit_sha256": "628699027e2e931fb1a7f20cfb3544c2f2538b8a456698e35dffa82c9712dd36",
+  "bottom_downward_heat_flux_w_m2": 0.0,
+  "chunk_size_per_gpu": 4096,
+  "claim_boundary": "Full available official PDS DTM product at factor-8 engineering resolution. Directional product-edge and no-data limits are audited in qa/full_product_dtm_build_audit_v1.json; no claim extends beyond that source.",
+  "control_scenario_ids": [
+    0,
+    19802,
+    39605,
+    59408
+  ],
+  "downwelling_longwave_w_m2": 19.9374,
+  "dtm_path": "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/inputs/wider_dem/gasa/DTEEC_021584_1440_022217_1440_A01.GASA_FULL_PRODUCT_v1.npz",
+  "dtm_product_id": "DTEEC_021584_1440_022217_1440_A01",
+  "dtm_sha256": "93c76b1d45b9c1baaf2683c5e239b2c1c784884f9dd2b8b4a6f2fd61c70bb6d9",
+  "dtm_size_bytes": 2065773,
+  "dtype": "float64",
+  "emissivity": 0.95,
+  "experiment": "same official full-product HiRISE DTM range sensitivity gasa, fixed 24 azimuth, 362-cell horizon; 384-azimuth follow-up attempt 005, azimuth-chunked horizon implementation",
+  "frost_albedo": 0.65,
+  "frost_mass_epsilon_kg_m2": 1e-10,
+  "horizon_azimuth_count": 384,
+  "horizon_maximum_distance_cells": 362,
+  "initial_subsurface_temperature_k": 185.643,
+  "initial_surface_frost_mass_kg_m2": 0.0,
+  "initial_surface_temperature_k": 185.643,
+  "latent_heat_j_kg": 590000.0,
+  "layer_count": 32,
+  "layer_thickness_m": 0.02,
+  "mars_sol_seconds": 88775.244,
+  "maximum_energy_residual_tolerance_j_m2": 0.001,
+  "maximum_local_time_alignment_error_s": 1e-06,
+  "maximum_mass_balance_tolerance_kg_m2": 1e-10,
+  "maximum_solar_longitude_alignment_error_deg": 1e-09,
+  "mcd_forcing": {
+    "consumed_variables": [
+      "ps",
+      "fluxsurf_lw",
+      "fluxsurf_dn_sw",
+      "thermal_inertia",
+      "ground_albedo"
+    ],
+    "diagnostic_variables": [
+      "t",
+      "tauref",
+      "rmsps",
+      "rmstsurf",
+      "dod",
+      "co2ice",
+      "tsurf"
+    ],
+    "path": "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/inputs/gasa/E0-GAS-03-MCD61-GASA-CLIM-AVG-HR-20260730.json",
+    "scenario": "climatology average solar",
+    "sha256": "45c17e009026c5b912fd41acf1874e66122848f5d597f7dbaa2aeaf34a16ba30",
+    "version": "6.1"
+  },
+  "minimum_blocked_direct_energy_fraction": 0.0001,
+  "model_scope": "full_product_gasa_DTM_24az_362cells_paired_B1_B3",
+  "paired_change_frost_epsilon_kg_m2": 1e-12,
+  "paired_change_temperature_epsilon_k": 1e-08,
+  "parameter_axes": {
+    "thermal_inertia_j_m2_k_sqrt_s": [
+      215.606
+    ],
+    "substrate_albedo": [
+      0.159002
+    ],
+    "surface_pressure_pa": [
+      593.562
+    ],
+    "initial_solar_longitude_deg": [
+      123.13801019085597
+    ]
+  },
+  "progress_every_steps": 592,
+  "schema_version": 1,
+  "shard_count": 4,
+  "sol_count": 29.300208333333334,
+  "surface_heat_capacity_j_m2_k": 5000.0,
+  "time_step_s": 150.0,
+  "volumetric_heat_capacity_j_m3_k": 1200000.0
+}

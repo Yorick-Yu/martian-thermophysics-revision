@@ -1,0 +1,1708 @@
+{
+  "schema_version": 3,
+  "run_id": "FORMAL-E3-GRID-AUDIT-V4",
+  "design_version": "v4",
+  "correction_of": "FORMAL-E3-GRID-AUDIT-V3",
+  "score_version": "v2",
+  "status": "FAIL",
+  "evidence_role": "fresh nested-grid numerical spatial convergence",
+  "claim_boundary": "This audit compares common-grid B1/B3 score V2 fields and separately reports annual projected-shadow boundaries. Legacy instantaneous warming and first/last frost phases are non-gating. It uses no observation values, holdouts or activity labels.",
+  "levels": [
+    64,
+    128,
+    256
+  ],
+  "production_side": 128,
+  "reference_side": 256,
+  "time_step_s": 150.0,
+  "initial_solar_longitude_deg": 0.0,
+  "seasonal_adjacency_window_deg": [
+    80.0,
+    180.0
+  ],
+  "seasonal_adjacency_snapshot_count": 825,
+  "projection": {
+    "continuous_fields": "equal-area block mean",
+    "phase_fields": "lower median when at least half of subcells frost",
+    "shadow_boundary": "four-neighbor contrast of annual blocked-direct-energy fraction at least 0.1"
+  },
+  "normalization": {
+    "error_statistic": "p95 absolute error",
+    "baseline_shadow_reference_scale": "q95_minus_q05",
+    "increment_reference_scale": "q05_q95_range",
+    "scale_floor_role": "lower bound on the reference scale"
+  },
+  "by_level": {
+    "256": {
+      "reference": true
+    },
+    "64": {
+      "valid_cell_count": 3686,
+      "shadow_boundary_cell_count": 148,
+      "features": {
+        "surface_temperature_snapshots_k": {
+          "baseline": {
+            "mean": 2.949087077402689,
+            "median": 0.4624820073638034,
+            "p95": 14.433089693513866,
+            "maximum": 156.4181821148081,
+            "reference_scale": 137.8280746581157,
+            "scale_floor": 1.0,
+            "normalized_p95": 0.10471806799387809,
+            "sample_count": 10129128
+          },
+          "shadow": {
+            "mean": 2.5425911549397266,
+            "median": 0.3286644682480926,
+            "p95": 12.490724078889828,
+            "maximum": 156.3572287646501,
+            "reference_scale": 137.63253077563795,
+            "scale_floor": 1.0,
+            "normalized_p95": 0.09075415534755818,
+            "sample_count": 10129128
+          },
+          "B3_minus_B1_increment": {
+            "mean": 1.6895563799405897,
+            "median": 0.07167405887970801,
+            "p95": 8.634032342058017,
+            "maximum": 124.17750938358839,
+            "reference_scale": 12.423705355178429,
+            "scale_floor": 1.0,
+            "normalized_p95": 0.6949643520368256,
+            "sample_count": 10129128
+          }
+        },
+        "frost_duration_s": {
+          "baseline": {
+            "mean": 1960957.5946147586,
+            "median": 773798.4375,
+            "p95": 7459715.625,
+            "maximum": 40709915.625,
+            "reference_scale": 31496226.5625,
+            "scale_floor": 88775.244,
+            "normalized_p95": 0.23684474107389353,
+            "sample_count": 3686
+          },
+          "shadow": {
+            "mean": 1437084.4686586102,
+            "median": 602296.875,
+            "p95": 5112316.40625,
+            "maximum": 40712165.625,
+            "reference_scale": 32575701.5625,
+            "scale_floor": 88775.244,
+            "normalized_p95": 0.15693649441260593,
+            "sample_count": 3686
+          },
+          "B3_minus_B1_increment": {
+            "mean": 1242254.9972289226,
+            "median": 389479.6875,
+            "p95": 5768929.6875,
+            "maximum": 25036340.625,
+            "reference_scale": 10114035.9375,
+            "scale_floor": 88775.244,
+            "normalized_p95": 0.5703884901288943,
+            "sample_count": 3686
+          }
+        },
+        "maximum_frost_mass_kg_m2": {
+          "baseline": {
+            "mean": 26.834065627438033,
+            "median": 10.657428018787868,
+            "p95": 108.31959303839312,
+            "maximum": 628.4624382317463,
+            "reference_scale": 463.09713516302804,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.233902533213168,
+            "sample_count": 3686
+          },
+          "shadow": {
+            "mean": 23.319611075921546,
+            "median": 10.915025487322374,
+            "p95": 85.02430921531177,
+            "maximum": 628.4829200326412,
+            "reference_scale": 527.3595614783222,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.16122644856759044,
+            "sample_count": 3686
+          },
+          "B3_minus_B1_increment": {
+            "mean": 16.36152573407481,
+            "median": 4.170639764452147,
+            "p95": 73.45775366780903,
+            "maximum": 321.8076620431832,
+            "reference_scale": 160.30854846313972,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.4582273021123351,
+            "sample_count": 3686
+          }
+        },
+        "peak_sublimation_flux_kg_m2_s": {
+          "baseline": {
+            "mean": 1.5057182505202601e-05,
+            "median": 5.857584610324094e-06,
+            "p95": 5.642442367355364e-05,
+            "maximum": 0.00043972265546010354,
+            "reference_scale": 0.00026164172139063143,
+            "scale_floor": 1e-09,
+            "normalized_p95": 0.21565529906184916,
+            "sample_count": 3686
+          },
+          "shadow": {
+            "mean": 1.2330985723288427e-05,
+            "median": 5.794156975700822e-06,
+            "p95": 3.916624773186184e-05,
+            "maximum": 0.0003898716133459592,
+            "reference_scale": 0.0002612384232165033,
+            "scale_floor": 1e-09,
+            "normalized_p95": 0.1499252952518494,
+            "sample_count": 3686
+          },
+          "B3_minus_B1_increment": {
+            "mean": 1.2634583950611683e-05,
+            "median": 4.434825439071677e-06,
+            "p95": 5.205382840316532e-05,
+            "maximum": 0.00025701458983771243,
+            "reference_scale": 0.00011331644299442283,
+            "scale_floor": 1e-09,
+            "normalized_p95": 0.4593669464697836,
+            "sample_count": 3686
+          }
+        },
+        "cumulative_sublimation_kg_m2": {
+          "baseline": {
+            "mean": 33.346796781491996,
+            "median": 12.426922202082181,
+            "p95": 123.27567821331559,
+            "maximum": 659.6694323127717,
+            "reference_scale": 537.937614670712,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.22916352166370885,
+            "sample_count": 3686
+          },
+          "shadow": {
+            "mean": 26.07269763717701,
+            "median": 11.049162057639649,
+            "p95": 92.08077479442424,
+            "maximum": 659.6915872386824,
+            "reference_scale": 576.4473202688619,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.15973840376511192,
+            "sample_count": 3686
+          },
+          "B3_minus_B1_increment": {
+            "mean": 24.423285934992528,
+            "median": 8.850328636747435,
+            "p95": 104.11187407133087,
+            "maximum": 468.4558103934774,
+            "reference_scale": 203.41120655953407,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.5118295881149477,
+            "sample_count": 3686
+          }
+        },
+        "seasonal_warm_neighbor_temperature_contrast_k": {
+          "baseline": {
+            "mean": 6.353315915498322,
+            "median": 3.593961212942665,
+            "p95": 22.089623351487006,
+            "maximum": 47.58665158245303,
+            "reference_scale": 18.06933168522317,
+            "scale_floor": 0.25,
+            "normalized_p95": 1.2224925490493692,
+            "sample_count": 3686
+          },
+          "shadow": {
+            "mean": 4.578492842287116,
+            "median": 2.2024978088391096,
+            "p95": 17.968111092448368,
+            "maximum": 47.223212387739785,
+            "reference_scale": 14.63735651788912,
+            "scale_floor": 0.25,
+            "normalized_p95": 1.2275516463979372,
+            "sample_count": 3686
+          },
+          "B3_minus_B1_increment": {
+            "mean": 3.0221727879976594,
+            "median": 0.8635875600985338,
+            "p95": 13.972765929739625,
+            "maximum": 40.113272786714404,
+            "reference_scale": 12.256143679679534,
+            "scale_floor": 0.25,
+            "normalized_p95": 1.1400621839075058,
+            "sample_count": 3686
+          }
+        },
+        "holding": {
+          "baseline": {
+            "mean": 0.06181180620228892,
+            "median": 0.03366093646715479,
+            "p95": 0.20952492295190617,
+            "maximum": 0.9990667966216398,
+            "reference_scale": 0.8876201275073953,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.2360524693601661,
+            "sample_count": 3686
+          },
+          "shadow": {
+            "mean": 0.04647549873370899,
+            "median": 0.029531455453805297,
+            "p95": 0.13174259494744323,
+            "maximum": 0.9408925464134148,
+            "reference_scale": 0.9185777128959606,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.1434201952626349,
+            "sample_count": 3686
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.028510816579501705,
+            "median": 0.0086555111335187,
+            "p95": 0.1275267853418223,
+            "maximum": 0.6274224275763858,
+            "reference_scale": 0.2703737608996992,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.4716684966672155,
+            "sample_count": 3686
+          }
+        },
+        "warming_sublimation": {
+          "baseline": {
+            "mean": 0.0631833387835952,
+            "median": 0.03291806863748026,
+            "p95": 0.2135207845715386,
+            "maximum": 0.9852885615240091,
+            "reference_scale": 0.9129107981269365,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.23389008543839068,
+            "sample_count": 3686
+          },
+          "shadow": {
+            "mean": 0.047501428402698706,
+            "median": 0.03210658682847861,
+            "p95": 0.14256399000576345,
+            "maximum": 0.9292557837919366,
+            "reference_scale": 0.8637902710070455,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.16504468132010325,
+            "sample_count": 3686
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.03576036488820234,
+            "median": 0.014029506270982484,
+            "p95": 0.15639193746528135,
+            "maximum": 0.7542175820420861,
+            "reference_scale": 0.347631738558406,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.449878190391427,
+            "sample_count": 3686
+          }
+        },
+        "warm_neighbor_adjacency": {
+          "baseline": {
+            "mean": 0.1923334243320803,
+            "median": 0.11582146606063995,
+            "p95": 0.620874787991056,
+            "maximum": 1.0,
+            "reference_scale": 0.5240514657212647,
+            "scale_floor": 0.05,
+            "normalized_p95": 1.1847591860782816,
+            "sample_count": 3686
+          },
+          "shadow": {
+            "mean": 0.16827634967212013,
+            "median": 0.09891110686575014,
+            "p95": 0.561008014831321,
+            "maximum": 1.0,
+            "reference_scale": 0.5843824228857578,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.9600015210262299,
+            "sample_count": 3686
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.10239989373257545,
+            "median": 0.04420917123676449,
+            "p95": 0.42601658645506735,
+            "maximum": 1.0979029751780571,
+            "reference_scale": 0.47931205145653133,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.8888084185667563,
+            "sample_count": 3686
+          }
+        },
+        "local_combination": {
+          "baseline": {
+            "mean": 0.07257793586055485,
+            "median": 0.03869949996584271,
+            "p95": 0.2831870496907322,
+            "maximum": 0.9341186044980516,
+            "reference_scale": 0.6250452775961781,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.4530664574890051,
+            "sample_count": 3686
+          },
+          "shadow": {
+            "mean": 0.0634314634485116,
+            "median": 0.03220362191809317,
+            "p95": 0.23033146896439755,
+            "maximum": 0.8753259210488356,
+            "reference_scale": 0.5585730829397799,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.4123569072683542,
+            "sample_count": 3686
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.03822914756634038,
+            "median": 0.015324962795580765,
+            "p95": 0.1642650561859822,
+            "maximum": 0.5095399304476349,
+            "reference_scale": 0.18885959349365267,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.8697734287535832,
+            "sample_count": 3686
+          }
+        },
+        "maximum_warming_rate_during_frost_loss_k_s": {
+          "baseline": {
+            "mean": 0.003994187126762445,
+            "median": 0.003325395621718629,
+            "p95": 0.010391150966268577,
+            "maximum": 0.02287640113500815,
+            "reference_scale": 0.012863227215286899,
+            "scale_floor": 1e-05,
+            "normalized_p95": 0.807818348564934,
+            "sample_count": 3686
+          },
+          "shadow": {
+            "mean": 0.004283713822020937,
+            "median": 0.0035513255090945496,
+            "p95": 0.010762443653296004,
+            "maximum": 0.02235240090854603,
+            "reference_scale": 0.012766976381619475,
+            "scale_floor": 1e-05,
+            "normalized_p95": 0.8429908015488004,
+            "sample_count": 3686
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.005197299409763587,
+            "median": 0.003830316532929707,
+            "p95": 0.015245418192379297,
+            "maximum": 0.02810497414222686,
+            "reference_scale": 0.009756575793267252,
+            "scale_floor": 1e-05,
+            "normalized_p95": 1.5625787689672586,
+            "sample_count": 3686
+          }
+        }
+      },
+      "shadow_boundary_features": {
+        "surface_temperature_snapshots_k": {
+          "baseline": {
+            "mean": 6.60537373699782,
+            "median": 2.406877169930212,
+            "p95": 27.640512822797742,
+            "maximum": 130.94912060400392,
+            "reference_scale": 125.36522183537934,
+            "scale_floor": 1.0,
+            "normalized_p95": 0.22047990996333328,
+            "sample_count": 406704
+          },
+          "shadow": {
+            "mean": 4.841896071668605,
+            "median": 0.9131773385412032,
+            "p95": 23.318224570638826,
+            "maximum": 139.74839907240383,
+            "reference_scale": 122.65696017411665,
+            "scale_floor": 1.0,
+            "normalized_p95": 0.1901092652022163,
+            "sample_count": 406704
+          },
+          "B3_minus_B1_increment": {
+            "mean": 4.992128369017614,
+            "median": 1.2518778069375855,
+            "p95": 22.972023324275597,
+            "maximum": 123.67675059870007,
+            "reference_scale": 27.890981687655497,
+            "scale_floor": 1.0,
+            "normalized_p95": 0.8236362413318344,
+            "sample_count": 406704
+          }
+        },
+        "frost_duration_s": {
+          "baseline": {
+            "mean": 4377178.315033784,
+            "median": 3426384.375,
+            "p95": 12075191.718750002,
+            "maximum": 27630515.625,
+            "reference_scale": 29717366.25,
+            "scale_floor": 88775.244,
+            "normalized_p95": 0.4063345189195561,
+            "sample_count": 148
+          },
+          "shadow": {
+            "mean": 2179182.062335391,
+            "median": 1159045.3125,
+            "p95": 6071522.258972359,
+            "maximum": 29370196.875,
+            "reference_scale": 23358758.90625,
+            "scale_floor": 88775.244,
+            "normalized_p95": 0.25992486515830376,
+            "sample_count": 148
+          },
+          "B3_minus_B1_increment": {
+            "mean": 4128041.624397352,
+            "median": 3358289.0625,
+            "p95": 10401346.875000004,
+            "maximum": 13911843.75,
+            "reference_scale": 14857277.343750002,
+            "scale_floor": 88775.244,
+            "normalized_p95": 0.7000843178966117,
+            "sample_count": 148
+          }
+        },
+        "maximum_frost_mass_kg_m2": {
+          "baseline": {
+            "mean": 79.85416813640784,
+            "median": 61.54692718866235,
+            "p95": 208.65769214256193,
+            "maximum": 388.4538728505779,
+            "reference_scale": 530.1620071651855,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.3935734536283912,
+            "sample_count": 148
+          },
+          "shadow": {
+            "mean": 41.058749789599496,
+            "median": 24.569301091359307,
+            "p95": 98.1167454404169,
+            "maximum": 450.9887502816441,
+            "reference_scale": 494.99654742136306,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.19821702989959558,
+            "sample_count": 148
+          },
+          "B3_minus_B1_increment": {
+            "mean": 78.20221587866085,
+            "median": 60.99657925983929,
+            "p95": 187.2823521003685,
+            "maximum": 321.8076620431832,
+            "reference_scale": 283.1204320182689,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.661493593963871,
+            "sample_count": 148
+          }
+        },
+        "peak_sublimation_flux_kg_m2_s": {
+          "baseline": {
+            "mean": 3.0536758209286866e-05,
+            "median": 1.8235912874147873e-05,
+            "p95": 9.646786787943509e-05,
+            "maximum": 0.0001994005318621824,
+            "reference_scale": 0.00020149361780650134,
+            "scale_floor": 1e-09,
+            "normalized_p95": 0.478763888055627,
+            "sample_count": 148
+          },
+          "shadow": {
+            "mean": 2.6992609627718158e-05,
+            "median": 2.061861836057585e-05,
+            "p95": 5.5928903248280706e-05,
+            "maximum": 0.0002408386047812136,
+            "reference_scale": 0.00014406859147625476,
+            "scale_floor": 1e-09,
+            "normalized_p95": 0.3882102453781458,
+            "sample_count": 148
+          },
+          "B3_minus_B1_increment": {
+            "mean": 4.0020937906069954e-05,
+            "median": 3.196842764183876e-05,
+            "p95": 0.00010526763869512639,
+            "maximum": 0.00016366079381898097,
+            "reference_scale": 0.00016810642247024163,
+            "scale_floor": 1e-09,
+            "normalized_p95": 0.6261964126549714,
+            "sample_count": 148
+          }
+        },
+        "cumulative_sublimation_kg_m2": {
+          "baseline": {
+            "mean": 72.04438617197343,
+            "median": 51.78582415584083,
+            "p95": 213.99389494091633,
+            "maximum": 482.2127225151786,
+            "reference_scale": 506.4554074573986,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.42253255032905696,
+            "sample_count": 148
+          },
+          "shadow": {
+            "mean": 38.08235925304243,
+            "median": 19.6491786674041,
+            "p95": 109.16207968106089,
+            "maximum": 535.4329617152872,
+            "reference_scale": 370.5841793167917,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.29456756595036493,
+            "sample_count": 148
+          },
+          "B3_minus_B1_increment": {
+            "mean": 73.28959794534987,
+            "median": 57.49764733303772,
+            "p95": 183.49015884480778,
+            "maximum": 262.9103014587407,
+            "reference_scale": 289.92907213897803,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.6328794745938808,
+            "sample_count": 148
+          }
+        },
+        "seasonal_warm_neighbor_temperature_contrast_k": {
+          "baseline": {
+            "mean": 11.740486921797743,
+            "median": 10.44422087721756,
+            "p95": 30.594843249170278,
+            "maximum": 42.67432650405769,
+            "reference_scale": 22.482927207121584,
+            "scale_floor": 0.25,
+            "normalized_p95": 1.3608033761493121,
+            "sample_count": 148
+          },
+          "shadow": {
+            "mean": 5.451497663796395,
+            "median": 0.09642493085888718,
+            "p95": 31.056595563648827,
+            "maximum": 42.68671355428366,
+            "reference_scale": 15.775036093922589,
+            "scale_floor": 0.25,
+            "normalized_p95": 1.968717876697191,
+            "sample_count": 148
+          },
+          "B3_minus_B1_increment": {
+            "mean": 7.886750142600268,
+            "median": 5.163069472804082,
+            "p95": 21.673046974674637,
+            "maximum": 30.631804119244485,
+            "reference_scale": 20.66161766270038,
+            "scale_floor": 0.25,
+            "normalized_p95": 1.048952087318901,
+            "sample_count": 148
+          }
+        },
+        "holding": {
+          "baseline": {
+            "mean": 0.16360747345599697,
+            "median": 0.13669857980878475,
+            "p95": 0.3753147929264927,
+            "maximum": 0.782499774420543,
+            "reference_scale": 0.8374812316727003,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.448147109132078,
+            "sample_count": 148
+          },
+          "shadow": {
+            "mean": 0.06685377558384559,
+            "median": 0.04053224669573291,
+            "p95": 0.18030666369637804,
+            "maximum": 0.822877226794176,
+            "reference_scale": 0.6190486869588869,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.2912641081304043,
+            "sample_count": 148
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.10899629738818982,
+            "median": 0.08506231500341044,
+            "p95": 0.2808821855943976,
+            "maximum": 0.4525778744141592,
+            "reference_scale": 0.45094315739625085,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.6228771431331023,
+            "sample_count": 148
+          }
+        },
+        "warming_sublimation": {
+          "baseline": {
+            "mean": 0.13055997299028768,
+            "median": 0.0955208347150665,
+            "p95": 0.3679245566979127,
+            "maximum": 0.7616794521833364,
+            "reference_scale": 0.7151800886945681,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.5144502238163432,
+            "sample_count": 148
+          },
+          "shadow": {
+            "mean": 0.0515275363332744,
+            "median": 0.02405099529526239,
+            "p95": 0.16274897921038253,
+            "maximum": 0.8189527456204039,
+            "reference_scale": 0.43361887980125124,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.3753272442495547,
+            "sample_count": 148
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.0959696392304052,
+            "median": 0.07266120558738093,
+            "p95": 0.29902972543623896,
+            "maximum": 0.42726819458288756,
+            "reference_scale": 0.5112029624732913,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.5849530370275627,
+            "sample_count": 148
+          }
+        },
+        "warm_neighbor_adjacency": {
+          "baseline": {
+            "mean": 0.3433166880503766,
+            "median": 0.3215766291351837,
+            "p95": 0.8999822481028121,
+            "maximum": 1.0,
+            "reference_scale": 0.6576294077411745,
+            "scale_floor": 0.05,
+            "normalized_p95": 1.3685249435454403,
+            "sample_count": 148
+          },
+          "shadow": {
+            "mean": 0.17238859789260497,
+            "median": 0.0036915069633041454,
+            "p95": 0.8969716358553768,
+            "maximum": 1.0,
+            "reference_scale": 0.537263246500098,
+            "scale_floor": 0.05,
+            "normalized_p95": 1.6695198149110932,
+            "sample_count": 148
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.24281814992493714,
+            "median": 0.18577787121970352,
+            "p95": 0.6254647331986372,
+            "maximum": 0.9249399812337772,
+            "reference_scale": 0.6814690825317101,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.9178182095583669,
+            "sample_count": 148
+          }
+        },
+        "local_combination": {
+          "baseline": {
+            "mean": 0.12988896553245768,
+            "median": 0.07429815607194895,
+            "p95": 0.36198788014145283,
+            "maximum": 0.5486762691290484,
+            "reference_scale": 0.4366283959976043,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.82905253863388,
+            "sample_count": 148
+          },
+          "shadow": {
+            "mean": 0.08240515107427612,
+            "median": 0.0252491312327503,
+            "p95": 0.35237915902353945,
+            "maximum": 0.7131708608038898,
+            "reference_scale": 0.17040175943691854,
+            "scale_floor": 0.05,
+            "normalized_p95": 2.067931459087942,
+            "sample_count": 148
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.07015435417420549,
+            "median": 0.04001018334529953,
+            "p95": 0.22857575822201795,
+            "maximum": 0.3273799997148401,
+            "reference_scale": 0.26767294488976184,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.8539367260899466,
+            "sample_count": 148
+          }
+        },
+        "maximum_warming_rate_during_frost_loss_k_s": {
+          "baseline": {
+            "mean": 0.006448189882982929,
+            "median": 0.006122374295491404,
+            "p95": 0.014416144828841862,
+            "maximum": 0.021622094448666154,
+            "reference_scale": 0.009300311949583773,
+            "scale_floor": 1e-05,
+            "normalized_p95": 1.550071105893071,
+            "sample_count": 148
+          },
+          "shadow": {
+            "mean": 0.007330874960903453,
+            "median": 0.007228702960385991,
+            "p95": 0.015113043985362448,
+            "maximum": 0.01961625070081496,
+            "reference_scale": 0.00955885951420491,
+            "scale_floor": 1e-05,
+            "normalized_p95": 1.5810509572720217,
+            "sample_count": 148
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.00853928748100937,
+            "median": 0.006593609364029819,
+            "p95": 0.02169228623869438,
+            "maximum": 0.027268911755797057,
+            "reference_scale": 0.011248353288804004,
+            "scale_floor": 1e-05,
+            "normalized_p95": 1.9284855019877172,
+            "sample_count": 148
+          }
+        }
+      }
+    },
+    "128": {
+      "valid_cell_count": 14816,
+      "shadow_boundary_cell_count": 469,
+      "features": {
+        "surface_temperature_snapshots_k": {
+          "baseline": {
+            "mean": 1.9331423840459883,
+            "median": 0.2757919217361575,
+            "p95": 9.134558660683604,
+            "maximum": 157.59533831377698,
+            "reference_scale": 138.3018634768042,
+            "scale_floor": 1.0,
+            "normalized_p95": 0.06604797962260024,
+            "sample_count": 40714368
+          },
+          "shadow": {
+            "mean": 1.6243218339368342,
+            "median": 0.19591393687774428,
+            "p95": 7.123622871761754,
+            "maximum": 157.54232612301004,
+            "reference_scale": 138.06589634563494,
+            "scale_floor": 1.0,
+            "normalized_p95": 0.05159581808623062,
+            "sample_count": 40714368
+          },
+          "B3_minus_B1_increment": {
+            "mean": 1.2514493252098844,
+            "median": 0.022727224080426822,
+            "p95": 5.95531013590097,
+            "maximum": 136.41368265250748,
+            "reference_scale": 12.942189487145175,
+            "scale_floor": 1.0,
+            "normalized_p95": 0.46014703631221593,
+            "sample_count": 40714368
+          }
+        },
+        "frost_duration_s": {
+          "baseline": {
+            "mean": 1387333.8797583694,
+            "median": 543468.75,
+            "p95": 5850215.625,
+            "maximum": 36321750.0,
+            "reference_scale": 32731434.375,
+            "scale_floor": 88775.244,
+            "normalized_p95": 0.17873386048331405,
+            "sample_count": 14816
+          },
+          "shadow": {
+            "mean": 1015190.4820911092,
+            "median": 442087.5,
+            "p95": 3993871.875,
+            "maximum": 36321750.0,
+            "reference_scale": 34464825.0,
+            "scale_floor": 88775.244,
+            "normalized_p95": 0.11588255199322788,
+            "sample_count": 14816
+          },
+          "B3_minus_B1_increment": {
+            "mean": 839378.5228915949,
+            "median": 174637.5,
+            "p95": 4361896.875,
+            "maximum": 24528937.5,
+            "reference_scale": 11038640.625,
+            "scale_floor": 88775.244,
+            "normalized_p95": 0.3951480099027139,
+            "sample_count": 14816
+          }
+        },
+        "maximum_frost_mass_kg_m2": {
+          "baseline": {
+            "mean": 18.148349586546825,
+            "median": 9.066152373510818,
+            "p95": 67.58800110171883,
+            "maximum": 529.8818460278754,
+            "reference_scale": 498.9628857202124,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.13545697092111578,
+            "sample_count": 14816
+          },
+          "shadow": {
+            "mean": 14.9621211051626,
+            "median": 8.252704606109546,
+            "p95": 48.78989810976958,
+            "maximum": 542.0374316745592,
+            "reference_scale": 549.3513771159712,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.08881364485861615,
+            "sample_count": 14816
+          },
+          "B3_minus_B1_increment": {
+            "mean": 9.502199399234945,
+            "median": 2.451478708072713,
+            "p95": 42.991815777029785,
+            "maximum": 360.6858961241743,
+            "reference_scale": 171.46140403015983,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.250737569893383,
+            "sample_count": 14816
+          }
+        },
+        "peak_sublimation_flux_kg_m2_s": {
+          "baseline": {
+            "mean": 1.094101717488603e-05,
+            "median": 4.266526581576476e-06,
+            "p95": 4.528894180680028e-05,
+            "maximum": 0.0004573539063431772,
+            "reference_scale": 0.0002767210017004173,
+            "scale_floor": 1e-09,
+            "normalized_p95": 0.1636628283668575,
+            "sample_count": 14816
+          },
+          "shadow": {
+            "mean": 8.558366377891396e-06,
+            "median": 3.7997760468701664e-06,
+            "p95": 3.157409348183245e-05,
+            "maximum": 0.0004573539063431772,
+            "reference_scale": 0.00028909496083587814,
+            "scale_floor": 1e-09,
+            "normalized_p95": 0.10921703163050757,
+            "sample_count": 14816
+          },
+          "B3_minus_B1_increment": {
+            "mean": 8.334936337546943e-06,
+            "median": 2.112978900571926e-06,
+            "p95": 3.866542779874841e-05,
+            "maximum": 0.00026746980786620454,
+            "reference_scale": 0.00012605114351700808,
+            "scale_floor": 1e-09,
+            "normalized_p95": 0.3067439669322102,
+            "sample_count": 14816
+          }
+        },
+        "cumulative_sublimation_kg_m2": {
+          "baseline": {
+            "mean": 23.864000326214157,
+            "median": 8.410389771295598,
+            "p95": 104.37985380098911,
+            "maximum": 610.2258267163364,
+            "reference_scale": 561.7397512515265,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.18581532385492802,
+            "sample_count": 14816
+          },
+          "shadow": {
+            "mean": 17.564940505365666,
+            "median": 6.933103108008993,
+            "p95": 72.8297181608765,
+            "maximum": 610.2258267163364,
+            "reference_scale": 604.4912736358326,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.12048100830774233,
+            "sample_count": 14816
+          },
+          "B3_minus_B1_increment": {
+            "mean": 16.507983953745747,
+            "median": 3.904564372146524,
+            "p95": 83.06017958636136,
+            "maximum": 462.4623492841975,
+            "reference_scale": 221.74023030723518,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.3745832656134442,
+            "sample_count": 14816
+          }
+        },
+        "seasonal_warm_neighbor_temperature_contrast_k": {
+          "baseline": {
+            "mean": 4.520384613043891,
+            "median": 2.2603578905880823,
+            "p95": 16.260388357572317,
+            "maximum": 40.331766927756156,
+            "reference_scale": 22.87868182717537,
+            "scale_floor": 0.25,
+            "normalized_p95": 0.7107222557839052,
+            "sample_count": 14816
+          },
+          "shadow": {
+            "mean": 3.0909940625587975,
+            "median": 1.351517453797527,
+            "p95": 12.589436988076894,
+            "maximum": 40.45321205913092,
+            "reference_scale": 17.55828692562704,
+            "scale_floor": 0.25,
+            "normalized_p95": 0.7170082731534643,
+            "sample_count": 14816
+          },
+          "B3_minus_B1_increment": {
+            "mean": 2.4504657061295765,
+            "median": 0.5686945529851157,
+            "p95": 11.314865261318166,
+            "maximum": 40.10846826045928,
+            "reference_scale": 15.641861743944947,
+            "scale_floor": 0.25,
+            "normalized_p95": 0.7233707500130676,
+            "sample_count": 14816
+          }
+        },
+        "holding": {
+          "baseline": {
+            "mean": 0.03801006873594906,
+            "median": 0.018637713578795734,
+            "p95": 0.1390177421653535,
+            "maximum": 0.9824124556102778,
+            "reference_scale": 0.9465306403099929,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.14687083148182567,
+            "sample_count": 14816
+          },
+          "shadow": {
+            "mean": 0.027922608981291574,
+            "median": 0.015992784735877535,
+            "p95": 0.09369267879062071,
+            "maximum": 0.9588174636225346,
+            "reference_scale": 0.9705948304185879,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.09653119494796189,
+            "sample_count": 14816
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.019533324878960548,
+            "median": 0.005796637174323688,
+            "p95": 0.09239238684521388,
+            "maximum": 0.6147250207421155,
+            "reference_scale": 0.2996273965158964,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.3083576065458757,
+            "sample_count": 14816
+          }
+        },
+        "warming_sublimation": {
+          "baseline": {
+            "mean": 0.03980247861389881,
+            "median": 0.017004097960810094,
+            "p95": 0.16503784910140862,
+            "maximum": 1.0,
+            "reference_scale": 0.9631241321185453,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.17135677904610438,
+            "sample_count": 14816
+          },
+          "shadow": {
+            "mean": 0.028225799346199284,
+            "median": 0.015092214740235088,
+            "p95": 0.10642968726178942,
+            "maximum": 1.0,
+            "reference_scale": 0.9358032204447608,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.11373084098941912,
+            "sample_count": 14816
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.025830364753343785,
+            "median": 0.008711720375626175,
+            "p95": 0.12447839779144566,
+            "maximum": 0.7185995680571834,
+            "reference_scale": 0.38184642808163693,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.32599073511519866,
+            "sample_count": 14816
+          }
+        },
+        "warm_neighbor_adjacency": {
+          "baseline": {
+            "mean": 0.1371749734651945,
+            "median": 0.06949806915227508,
+            "p95": 0.5,
+            "maximum": 1.0,
+            "reference_scale": 0.7050805383839551,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.7091388469549879,
+            "sample_count": 14816
+          },
+          "shadow": {
+            "mean": 0.12230481309390413,
+            "median": 0.0581488532839714,
+            "p95": 0.5,
+            "maximum": 1.0,
+            "reference_scale": 0.7249210396698591,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.6897302914917578,
+            "sample_count": 14816
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.08568042174757795,
+            "median": 0.02859507359208887,
+            "p95": 0.36226170297629867,
+            "maximum": 1.255524873027496,
+            "reference_scale": 0.5813585736030262,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.6231295441832854,
+            "sample_count": 14816
+          }
+        },
+        "local_combination": {
+          "baseline": {
+            "mean": 0.05546694129405978,
+            "median": 0.026293254336791805,
+            "p95": 0.21087852496243883,
+            "maximum": 0.9941374852034258,
+            "reference_scale": 0.67747330146116,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.3112720818777958,
+            "sample_count": 14816
+          },
+          "shadow": {
+            "mean": 0.04789842603994618,
+            "median": 0.020856189171957057,
+            "p95": 0.1876068825384477,
+            "maximum": 0.9862724878741783,
+            "reference_scale": 0.6230027388491952,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.3011333190685379,
+            "sample_count": 14816
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.03395944159779052,
+            "median": 0.011570799514594748,
+            "p95": 0.1474388149227105,
+            "maximum": 0.7389651803192506,
+            "reference_scale": 0.24617229184518036,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.5989253047838378,
+            "sample_count": 14816
+          }
+        },
+        "maximum_warming_rate_during_frost_loss_k_s": {
+          "baseline": {
+            "mean": 0.0041421319814911985,
+            "median": 0.003266199814312004,
+            "p95": 0.011478488840783913,
+            "maximum": 0.025695376324720347,
+            "reference_scale": 0.01597161361172745,
+            "scale_floor": 1e-05,
+            "normalized_p95": 0.7186805992073101,
+            "sample_count": 14816
+          },
+          "shadow": {
+            "mean": 0.004509732433773565,
+            "median": 0.0035656576450618614,
+            "p95": 0.012351725536971,
+            "maximum": 0.02760270909682376,
+            "reference_scale": 0.01625046180404727,
+            "scale_floor": 1e-05,
+            "normalized_p95": 0.7600845862666334,
+            "sample_count": 14816
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.005817849503665376,
+            "median": 0.00422123970906076,
+            "p95": 0.017180041737771344,
+            "maximum": 0.040325651260275916,
+            "reference_scale": 0.01542692301856299,
+            "scale_floor": 1e-05,
+            "normalized_p95": 1.113640206611445,
+            "sample_count": 14816
+          }
+        }
+      },
+      "shadow_boundary_features": {
+        "surface_temperature_snapshots_k": {
+          "baseline": {
+            "mean": 4.88960976577756,
+            "median": 1.0049683043352928,
+            "p95": 23.034441759088978,
+            "maximum": 156.73957263850625,
+            "reference_scale": 126.5681459334879,
+            "scale_floor": 1.0,
+            "normalized_p95": 0.18199240882610127,
+            "sample_count": 1288812
+          },
+          "shadow": {
+            "mean": 3.418976659315186,
+            "median": 0.040889221952014054,
+            "p95": 17.234238901223375,
+            "maximum": 156.9156302254166,
+            "reference_scale": 122.7552746941621,
+            "scale_floor": 1.0,
+            "normalized_p95": 0.1403950986559357,
+            "sample_count": 1288812
+          },
+          "B3_minus_B1_increment": {
+            "mean": 3.989797292156121,
+            "median": 0.3019761247120698,
+            "p95": 22.28045941920202,
+            "maximum": 136.41368265250748,
+            "reference_scale": 33.1463104100278,
+            "scale_floor": 1.0,
+            "normalized_p95": 0.6721852038307552,
+            "sample_count": 1288812
+          }
+        },
+        "frost_duration_s": {
+          "baseline": {
+            "mean": 3122144.4562899787,
+            "median": 1910587.5,
+            "p95": 9959534.999999981,
+            "maximum": 27486900.0,
+            "reference_scale": 34609635.0,
+            "scale_floor": 88775.244,
+            "normalized_p95": 0.2877676982146729,
+            "sample_count": 469
+          },
+          "shadow": {
+            "mean": 1440361.6101532434,
+            "median": 788025.0,
+            "p95": 4648949.999999999,
+            "maximum": 29412112.5,
+            "reference_scale": 22257570.0,
+            "scale_floor": 88775.244,
+            "normalized_p95": 0.2088705101230727,
+            "sample_count": 469
+          },
+          "B3_minus_B1_increment": {
+            "mean": 2838412.782861132,
+            "median": 1891200.0,
+            "p95": 9539497.499999993,
+            "maximum": 16864312.5,
+            "reference_scale": 18241657.499999996,
+            "scale_floor": 88775.244,
+            "normalized_p95": 0.5229512449732155,
+            "sample_count": 469
+          }
+        },
+        "maximum_frost_mass_kg_m2": {
+          "baseline": {
+            "mean": 63.26016204964155,
+            "median": 45.84648663440515,
+            "p95": 188.92539986495436,
+            "maximum": 457.6586733261212,
+            "reference_scale": 610.3425968432275,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.30953992207344116,
+            "sample_count": 469
+          },
+          "shadow": {
+            "mean": 28.366921736756932,
+            "median": 15.2288396082713,
+            "p95": 95.88852920356487,
+            "maximum": 456.637119495027,
+            "reference_scale": 478.8916924619176,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.20023009526562233,
+            "sample_count": 469
+          },
+          "B3_minus_B1_increment": {
+            "mean": 54.35858615577241,
+            "median": 40.314110080915356,
+            "p95": 155.37217751041018,
+            "maximum": 360.6858961241743,
+            "reference_scale": 334.9341635787328,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.4638887112926207,
+            "sample_count": 469
+          }
+        },
+        "peak_sublimation_flux_kg_m2_s": {
+          "baseline": {
+            "mean": 2.152635030155021e-05,
+            "median": 1.3956237117115032e-05,
+            "p95": 6.55524222566953e-05,
+            "maximum": 0.0002913750178971872,
+            "reference_scale": 0.00023027725620643937,
+            "scale_floor": 1e-09,
+            "normalized_p95": 0.28466737591283764,
+            "sample_count": 469
+          },
+          "shadow": {
+            "mean": 1.8506792669612066e-05,
+            "median": 1.332797597155687e-05,
+            "p95": 4.7814036270062434e-05,
+            "maximum": 0.0002463310737337919,
+            "reference_scale": 0.00015479380355494298,
+            "scale_floor": 1e-09,
+            "normalized_p95": 0.3088885677073706,
+            "sample_count": 469
+          },
+          "B3_minus_B1_increment": {
+            "mean": 2.6493573288322303e-05,
+            "median": 1.8465526854072095e-05,
+            "p95": 8.32312434584482e-05,
+            "maximum": 0.0001865273035569833,
+            "reference_scale": 0.00018324847313356597,
+            "scale_floor": 1e-09,
+            "normalized_p95": 0.45419883743196426,
+            "sample_count": 469
+          }
+        },
+        "cumulative_sublimation_kg_m2": {
+          "baseline": {
+            "mean": 52.28819764924426,
+            "median": 33.64649533517837,
+            "p95": 161.7181355796461,
+            "maximum": 464.3587953584017,
+            "reference_scale": 586.1215396120615,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.27591228891994496,
+            "sample_count": 469
+          },
+          "shadow": {
+            "mean": 22.98764883010574,
+            "median": 11.754833220057094,
+            "p95": 77.20255930440666,
+            "maximum": 539.9625976076572,
+            "reference_scale": 348.62725864365973,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.22144728328118843,
+            "sample_count": 469
+          },
+          "B3_minus_B1_increment": {
+            "mean": 50.37669040784481,
+            "median": 36.143502326577845,
+            "p95": 163.6495063225403,
+            "maximum": 265.9843820845561,
+            "reference_scale": 343.01963241179806,
+            "scale_floor": 0.0001,
+            "normalized_p95": 0.4770849562513601,
+            "sample_count": 469
+          }
+        },
+        "seasonal_warm_neighbor_temperature_contrast_k": {
+          "baseline": {
+            "mean": 7.894413557337661,
+            "median": 5.256873668965884,
+            "p95": 26.552651086481408,
+            "maximum": 40.10846826045928,
+            "reference_scale": 31.092227278872517,
+            "scale_floor": 0.25,
+            "normalized_p95": 0.8539964296647286,
+            "sample_count": 469
+          },
+          "shadow": {
+            "mean": 2.549081642028752,
+            "median": 0.0,
+            "p95": 14.49135650340605,
+            "maximum": 34.85188326756364,
+            "reference_scale": 21.545273052705053,
+            "scale_floor": 0.25,
+            "normalized_p95": 0.6726002714357167,
+            "sample_count": 469
+          },
+          "B3_minus_B1_increment": {
+            "mean": 6.672314562252038,
+            "median": 3.414131463007644,
+            "p95": 22.873943111513316,
+            "maximum": 40.10846826045928,
+            "reference_scale": 27.635271598747376,
+            "scale_floor": 0.25,
+            "normalized_p95": 0.8277082796085176,
+            "sample_count": 469
+          }
+        },
+        "holding": {
+          "baseline": {
+            "mean": 0.10324996762907176,
+            "median": 0.07928089962888607,
+            "p95": 0.31274468835992847,
+            "maximum": 0.7472430551235265,
+            "reference_scale": 0.9090758680222758,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.34402484914742565,
+            "sample_count": 469
+          },
+          "shadow": {
+            "mean": 0.037109162701015254,
+            "median": 0.017113579884644126,
+            "p95": 0.13819831668844884,
+            "maximum": 0.8161708971238335,
+            "reference_scale": 0.5404002601089272,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.25573325346030096,
+            "sample_count": 469
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.07978285099949602,
+            "median": 0.05744535028722786,
+            "p95": 0.2386082180834779,
+            "maximum": 0.581196030210173,
+            "reference_scale": 0.5474550494618673,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.4358498808587536,
+            "sample_count": 469
+          }
+        },
+        "warming_sublimation": {
+          "baseline": {
+            "mean": 0.07739991766865623,
+            "median": 0.04629775599618646,
+            "p95": 0.25353429360447227,
+            "maximum": 0.723094108959171,
+            "reference_scale": 0.8062451367974446,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.31446303615741183,
+            "sample_count": 469
+          },
+          "shadow": {
+            "mean": 0.02953280175984275,
+            "median": 0.012656004167253876,
+            "p95": 0.09705061437158223,
+            "maximum": 0.8368049701462631,
+            "reference_scale": 0.3948496989430966,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.2457912836994934,
+            "sample_count": 469
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.06775616502282217,
+            "median": 0.037060345027576824,
+            "p95": 0.2376598376931041,
+            "maximum": 0.48662751460731113,
+            "reference_scale": 0.5525780442842301,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.4300927989293378,
+            "sample_count": 469
+          }
+        },
+        "warm_neighbor_adjacency": {
+          "baseline": {
+            "mean": 0.22548432678616293,
+            "median": 0.15859897439497062,
+            "p95": 0.75,
+            "maximum": 1.0,
+            "reference_scale": 0.8033170280010472,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.9336289084600635,
+            "sample_count": 469
+          },
+          "shadow": {
+            "mean": 0.08615984782238913,
+            "median": 0.0,
+            "p95": 0.47641965838793854,
+            "maximum": 1.0,
+            "reference_scale": 0.696256606600265,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.6842587256934435,
+            "sample_count": 469
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.19253306028754844,
+            "median": 0.10761895938052295,
+            "p95": 0.6922624428342757,
+            "maximum": 1.0,
+            "reference_scale": 0.9592401589624792,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.7216779201394483,
+            "sample_count": 469
+          }
+        },
+        "local_combination": {
+          "baseline": {
+            "mean": 0.09291219939838122,
+            "median": 0.06367616071487056,
+            "p95": 0.29905965790471006,
+            "maximum": 0.6505735821666877,
+            "reference_scale": 0.6033186023213508,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.4956910938168277,
+            "sample_count": 469
+          },
+          "shadow": {
+            "mean": 0.04364261918037554,
+            "median": 0.012348073091798084,
+            "p95": 0.22240558345433248,
+            "maximum": 0.7068280688496752,
+            "reference_scale": 0.22799818536231542,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.9754708490372603,
+            "sample_count": 469
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.07397643494596502,
+            "median": 0.046492985181071034,
+            "p95": 0.24894797649628617,
+            "maximum": 0.5512763117135955,
+            "reference_scale": 0.47256136088437795,
+            "scale_floor": 0.05,
+            "normalized_p95": 0.5268056110859146,
+            "sample_count": 469
+          }
+        },
+        "maximum_warming_rate_during_frost_loss_k_s": {
+          "baseline": {
+            "mean": 0.006620041197618666,
+            "median": 0.005608575863710807,
+            "p95": 0.015774386395933853,
+            "maximum": 0.022002602627451847,
+            "reference_scale": 0.014471227631985231,
+            "scale_floor": 1e-05,
+            "normalized_p95": 1.0900517079192575,
+            "sample_count": 469
+          },
+          "shadow": {
+            "mean": 0.007432599912751614,
+            "median": 0.006876261861296435,
+            "p95": 0.016040828327130226,
+            "maximum": 0.022825228022914625,
+            "reference_scale": 0.015658230140973964,
+            "scale_floor": 1e-05,
+            "normalized_p95": 1.024434318739197,
+            "sample_count": 469
+          },
+          "B3_minus_B1_increment": {
+            "mean": 0.009509855996238183,
+            "median": 0.007963804178809302,
+            "p95": 0.0233865230875886,
+            "maximum": 0.0349546061499845,
+            "reference_scale": 0.021422465792105844,
+            "scale_floor": 1e-05,
+            "normalized_p95": 1.0916821300845072,
+            "sample_count": 469
+          }
+        }
+      }
+    }
+  },
+  "phase_by_level": {
+    "64": {
+      "baseline_first_frost_step": {
+        "presence_agreement": 0.9744981009224091,
+        "common_present_count": 3328,
+        "absolute_time_error_s": {
+          "mean": 590430.2433894231,
+          "median": 266250.0,
+          "p95": 2219850.0,
+          "maximum": 9760050.0
+        }
+      },
+      "baseline_last_frost_step": {
+        "presence_agreement": 0.9744981009224091,
+        "common_present_count": 3328,
+        "absolute_time_error_s": {
+          "mean": 1142037.9356971155,
+          "median": 443700.0,
+          "p95": 4883527.499999999,
+          "maximum": 19650750.0
+        }
+      },
+      "shadow_first_frost_step": {
+        "presence_agreement": 0.9850786760716224,
+        "common_present_count": 3455,
+        "absolute_time_error_s": {
+          "mean": 530453.6613603473,
+          "median": 266100.0,
+          "p95": 1979024.9999999793,
+          "maximum": 9417450.0
+        }
+      },
+      "shadow_last_frost_step": {
+        "presence_agreement": 0.9850786760716224,
+        "common_present_count": 3455,
+        "absolute_time_error_s": {
+          "mean": 907971.0564399421,
+          "median": 358200.0,
+          "p95": 3909599.999999998,
+          "maximum": 18544350.0
+        }
+      }
+    },
+    "128": {
+      "baseline_first_frost_step": {
+        "presence_agreement": 0.9822489200863931,
+        "common_present_count": 13322,
+        "absolute_time_error_s": {
+          "mean": 516058.8312565681,
+          "median": 266700.0,
+          "p95": 1775400.0,
+          "maximum": 10381200.0
+        }
+      },
+      "baseline_last_frost_step": {
+        "presence_agreement": 0.9822489200863931,
+        "common_present_count": 13322,
+        "absolute_time_error_s": {
+          "mean": 1080331.436721213,
+          "median": 454050.0,
+          "p95": 5059612.499999999,
+          "maximum": 23638350.0
+        }
+      },
+      "shadow_first_frost_step": {
+        "presence_agreement": 0.990280777537797,
+        "common_present_count": 13895,
+        "absolute_time_error_s": {
+          "mean": 451188.9348686578,
+          "median": 266250.0,
+          "p95": 1422495.0,
+          "maximum": 9873900.0
+        }
+      },
+      "shadow_last_frost_step": {
+        "presence_agreement": 0.990280777537797,
+        "common_present_count": 13895,
+        "absolute_time_error_s": {
+          "mean": 752555.0197912918,
+          "median": 353550.0,
+          "p95": 2837984.9999999977,
+          "maximum": 21936300.0
+        }
+      }
+    }
+  },
+  "acceptance": {
+    "features": {
+      "surface_temperature_snapshots_k": {
+        "worst_normalized_p95_by_level": {
+          "64": 0.6949643520368256,
+          "128": 0.46014703631221593
+        },
+        "production_limit": 0.05,
+        "error_monotone_64_to_128": true,
+        "pass": false
+      },
+      "frost_duration_s": {
+        "worst_normalized_p95_by_level": {
+          "64": 0.5703884901288943,
+          "128": 0.3951480099027139
+        },
+        "production_limit": 0.05,
+        "error_monotone_64_to_128": true,
+        "pass": false
+      },
+      "maximum_frost_mass_kg_m2": {
+        "worst_normalized_p95_by_level": {
+          "64": 0.4582273021123351,
+          "128": 0.250737569893383
+        },
+        "production_limit": 0.05,
+        "error_monotone_64_to_128": true,
+        "pass": false
+      },
+      "peak_sublimation_flux_kg_m2_s": {
+        "worst_normalized_p95_by_level": {
+          "64": 0.4593669464697836,
+          "128": 0.3067439669322102
+        },
+        "production_limit": 0.05,
+        "error_monotone_64_to_128": true,
+        "pass": false
+      },
+      "cumulative_sublimation_kg_m2": {
+        "worst_normalized_p95_by_level": {
+          "64": 0.5118295881149477,
+          "128": 0.3745832656134442
+        },
+        "production_limit": 0.05,
+        "error_monotone_64_to_128": true,
+        "pass": false
+      },
+      "seasonal_warm_neighbor_temperature_contrast_k": {
+        "worst_normalized_p95_by_level": {
+          "64": 1.2275516463979372,
+          "128": 0.7233707500130676
+        },
+        "production_limit": 0.05,
+        "error_monotone_64_to_128": true,
+        "pass": false
+      },
+      "holding": {
+        "worst_normalized_p95_by_level": {
+          "64": 0.4716684966672155,
+          "128": 0.3083576065458757
+        },
+        "production_limit": 0.05,
+        "error_monotone_64_to_128": true,
+        "pass": false
+      },
+      "warming_sublimation": {
+        "worst_normalized_p95_by_level": {
+          "64": 0.449878190391427,
+          "128": 0.32599073511519866
+        },
+        "production_limit": 0.05,
+        "error_monotone_64_to_128": true,
+        "pass": false
+      },
+      "warm_neighbor_adjacency": {
+        "worst_normalized_p95_by_level": {
+          "64": 1.1847591860782816,
+          "128": 0.7091388469549879
+        },
+        "production_limit": 0.05,
+        "error_monotone_64_to_128": true,
+        "pass": false
+      },
+      "local_combination": {
+        "worst_normalized_p95_by_level": {
+          "64": 0.8697734287535832,
+          "128": 0.5989253047838378
+        },
+        "production_limit": 0.05,
+        "error_monotone_64_to_128": true,
+        "pass": false
+      }
+    },
+    "phase": {
+      "baseline_first_frost_step": {
+        "gated": false,
+        "production_presence_agreement": 0.9822489200863931,
+        "minimum_presence_agreement": 0.99,
+        "production_p95_time_error_s": 1775400.0,
+        "p95_time_error_limit_s": 150.0,
+        "coarse_p95_time_error_s": 2219850.0,
+        "error_monotone_64_to_128": true,
+        "pass": false
+      },
+      "baseline_last_frost_step": {
+        "gated": false,
+        "production_presence_agreement": 0.9822489200863931,
+        "minimum_presence_agreement": 0.99,
+        "production_p95_time_error_s": 5059612.499999999,
+        "p95_time_error_limit_s": 150.0,
+        "coarse_p95_time_error_s": 4883527.499999999,
+        "error_monotone_64_to_128": false,
+        "pass": false
+      },
+      "shadow_first_frost_step": {
+        "gated": false,
+        "production_presence_agreement": 0.990280777537797,
+        "minimum_presence_agreement": 0.99,
+        "production_p95_time_error_s": 1422495.0,
+        "p95_time_error_limit_s": 150.0,
+        "coarse_p95_time_error_s": 1979024.9999999793,
+        "error_monotone_64_to_128": true,
+        "pass": false
+      },
+      "shadow_last_frost_step": {
+        "gated": false,
+        "production_presence_agreement": 0.990280777537797,
+        "minimum_presence_agreement": 0.99,
+        "production_p95_time_error_s": 2837984.9999999977,
+        "p95_time_error_limit_s": 150.0,
+        "coarse_p95_time_error_s": 3909599.999999998,
+        "error_monotone_64_to_128": true,
+        "pass": false
+      }
+    },
+    "phase_gated": false,
+    "non_gating_features": [
+      "maximum_warming_rate_during_frost_loss_k_s"
+    ],
+    "shadow_boundary_role": "reported diagnostic subset; not averaged into the global gate"
+  },
+  "per_run": {
+    "FORMAL-E3-GRID-64-V3": {
+      "status": "PASS",
+      "elapsed_s": 3166.0769830830395,
+      "peak_memory_bytes": 364724224
+    },
+    "FORMAL-E3-GRID-128-V3": {
+      "status": "PASS",
+      "elapsed_s": 13594.74044368416,
+      "peak_memory_bytes": 398908416
+    },
+    "FORMAL-E3-GRID-256-V3": {
+      "status": "PASS",
+      "elapsed_s": 41358.00769934803,
+      "peak_memory_bytes": 408528384
+    }
+  }
+}

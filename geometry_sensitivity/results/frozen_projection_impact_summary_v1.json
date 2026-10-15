@@ -1,0 +1,354 @@
+{
+  "four_state_rule": {
+    "BEYOND_UNCERTAINTY": "gain lower one-sided 95% bound > U_val and correlation lower bound > 0",
+    "NO_POSITIVE_EVIDENCE": "point gain <= 0 or correlation lower bound <= 0",
+    "POSITIVE_WITHIN_UNCERTAINTY": "gain lower one-sided 95% bound > 0 but <= U_val and correlation lower bound > 0",
+    "SIGN_UNCERTAIN": "point gain > 0 but lower bound <= 0 and correlation lower bound > 0"
+  },
+  "method": "Exact same frozen operator and calibration re-applied to staged 24/128 baseline and each geometry variant; no refitting. Bootstrap seed, observation patches, pixel support, PSF, registration, gains, offsets, smoothing, and U_val are fixed within each site.",
+  "schema_version": 1,
+  "sites": {
+    "gasa": {
+      "baseline": {
+        "correlation_lower_bound": 0.29854795546773694,
+        "four_state": "POSITIVE_WITHIN_UNCERTAINTY",
+        "lower_bound": 5.656787052732358e-08,
+        "mean_gain_g": 1.3646976235151665e-07,
+        "official_status": "POSITIVE_BUT_NOT_SEPARABLE_FROM_UNCERTAINTY",
+        "u_val": 4.252676151837666e-07
+      },
+      "variants": {
+        "azimuth_only": {
+          "class_unchanged": true,
+          "correlation_lower_bound": 0.29117522945702434,
+          "delta_lower_bound_within_u": true,
+          "delta_mean_gain_within_u": true,
+          "four_state": "POSITIVE_WITHIN_UNCERTAINTY",
+          "local_radiance_change_after_local_field": {
+            "max_abs": 4.370458108776432e-07,
+            "p95_abs": 1.0777608417539282e-07,
+            "rmse": 5.3621927789837916e-08,
+            "shape": [
+              2,
+              17,
+              17
+            ]
+          },
+          "local_radiance_change_calibrated": {
+            "max_abs": 5.24682801724297e-07,
+            "p95_abs": 1.3852774108665769e-07,
+            "rmse": 6.80307294560281e-08,
+            "shape": [
+              2,
+              17,
+              17
+            ]
+          },
+          "lower_bound": 5.755117494333577e-08,
+          "lower_bound_delta": 9.833044160121858e-10,
+          "lower_bound_sign_unchanged": true,
+          "mean_gain_delta": 5.7787354603280556e-09,
+          "mean_gain_g": 1.422484978118447e-07,
+          "official_status": "POSITIVE_BUT_NOT_SEPARABLE_FROM_UNCERTAINTY",
+          "thermal_final_frost": {
+            "fraction_abs_gt_epsilon": 0.22262620141729367,
+            "max_abs": 9.904093935222225,
+            "mean_signed_delta": -0.01997114287629062,
+            "n": 59409,
+            "p50_abs": 0.0,
+            "p95_abs": 0.805151118294139,
+            "p99_abs": 2.504777618318329,
+            "rmse": 0.5027847891653681
+          },
+          "thermal_final_temperature": {
+            "fraction_abs_gt_epsilon": 0.740611691831204,
+            "max_abs": 33.54658573003894,
+            "mean_signed_delta": 0.19957203785284028,
+            "n": 59409,
+            "p50_abs": 0.04906196877365687,
+            "p95_abs": 2.90519214730803,
+            "p99_abs": 14.329429528684187,
+            "rmse": 2.542333113173166
+          }
+        },
+        "distance_only": {
+          "class_unchanged": true,
+          "correlation_lower_bound": 0.2715985739991295,
+          "delta_lower_bound_within_u": true,
+          "delta_mean_gain_within_u": true,
+          "four_state": "POSITIVE_WITHIN_UNCERTAINTY",
+          "local_radiance_change_after_local_field": {
+            "max_abs": 9.903346068360834e-07,
+            "p95_abs": 1.69417370655254e-07,
+            "rmse": 8.797729941156944e-08,
+            "shape": [
+              2,
+              17,
+              17
+            ]
+          },
+          "local_radiance_change_calibrated": {
+            "max_abs": 1.2014685242524396e-06,
+            "p95_abs": 2.5606996942489527e-07,
+            "rmse": 1.2652444786512674e-07,
+            "shape": [
+              2,
+              17,
+              17
+            ]
+          },
+          "lower_bound": 4.3516503295104574e-08,
+          "lower_bound_delta": -1.305136723221901e-08,
+          "lower_bound_sign_unchanged": true,
+          "mean_gain_delta": -2.5655524864101662e-08,
+          "mean_gain_g": 1.1081423748741499e-07,
+          "official_status": "POSITIVE_BUT_NOT_SEPARABLE_FROM_UNCERTAINTY",
+          "thermal_final_frost": {
+            "fraction_abs_gt_epsilon": 0.01141241226076857,
+            "max_abs": 8.36456617561469,
+            "mean_signed_delta": 0.009570488042043043,
+            "n": 59409,
+            "p50_abs": 0.0,
+            "p95_abs": 0.0,
+            "p99_abs": 0.0028500180731090893,
+            "rmse": 0.16048527086113495
+          },
+          "thermal_final_temperature": {
+            "fraction_abs_gt_epsilon": 0.4910030466764295,
+            "max_abs": 33.22655344284394,
+            "mean_signed_delta": -0.5411609727507797,
+            "n": 59409,
+            "p50_abs": 0.0,
+            "p95_abs": 2.6538054157476023,
+            "p99_abs": 10.12938771316397,
+            "rmse": 2.0963653736798613
+          }
+        },
+        "joint": {
+          "class_unchanged": true,
+          "correlation_lower_bound": 0.288810529158633,
+          "delta_lower_bound_within_u": true,
+          "delta_mean_gain_within_u": true,
+          "four_state": "POSITIVE_WITHIN_UNCERTAINTY",
+          "local_radiance_change_after_local_field": {
+            "max_abs": 9.060042152150176e-07,
+            "p95_abs": 1.1776906370922866e-07,
+            "rmse": 7.753704824322115e-08,
+            "shape": [
+              2,
+              17,
+              17
+            ]
+          },
+          "local_radiance_change_calibrated": {
+            "max_abs": 1.1250503021240115e-06,
+            "p95_abs": 1.2079846359597014e-07,
+            "rmse": 9.791103296056815e-08,
+            "shape": [
+              2,
+              17,
+              17
+            ]
+          },
+          "lower_bound": 5.020634011372716e-08,
+          "lower_bound_delta": -6.361530413596424e-09,
+          "lower_bound_sign_unchanged": true,
+          "mean_gain_delta": -1.5352561076514247e-08,
+          "mean_gain_g": 1.211172012750024e-07,
+          "official_status": "POSITIVE_BUT_NOT_SEPARABLE_FROM_UNCERTAINTY",
+          "thermal_final_frost": {
+            "fraction_abs_gt_epsilon": 0.22316484034405562,
+            "max_abs": 12.129278537608812,
+            "mean_signed_delta": -0.010557091667937793,
+            "n": 59409,
+            "p50_abs": 0.0,
+            "p95_abs": 0.8128913297100688,
+            "p99_abs": 2.5283183414506554,
+            "rmse": 0.5112211316287659
+          },
+          "thermal_final_temperature": {
+            "fraction_abs_gt_epsilon": 0.7415543099530374,
+            "max_abs": 33.54658573003894,
+            "mean_signed_delta": -0.15597572785136915,
+            "n": 59409,
+            "p50_abs": 0.11183411120117626,
+            "p95_abs": 2.813375613964848,
+            "p99_abs": 14.714089304182052,
+            "rmse": 2.5454554616906586
+          }
+        }
+      }
+    },
+    "kaiser": {
+      "baseline": {
+        "correlation_lower_bound": 0.7621848269255482,
+        "four_state": "BEYOND_UNCERTAINTY",
+        "lower_bound": 2.3996495785219065e-06,
+        "mean_gain_g": 3.0364443174676384e-06,
+        "official_status": "SUPPORTED_BEYOND_UNCERTAINTY",
+        "u_val": 2.0594118204307127e-06
+      },
+      "variants": {
+        "azimuth_only": {
+          "class_unchanged": true,
+          "correlation_lower_bound": 0.7621223945479171,
+          "delta_lower_bound_within_u": true,
+          "delta_mean_gain_within_u": true,
+          "four_state": "BEYOND_UNCERTAINTY",
+          "local_radiance_change_after_local_field": {
+            "max_abs": 6.515061538288558e-07,
+            "p95_abs": 2.465420238058972e-07,
+            "rmse": 1.1209282822081301e-07,
+            "shape": [
+              2,
+              17,
+              17
+            ]
+          },
+          "local_radiance_change_calibrated": {
+            "max_abs": 8.640835699424808e-07,
+            "p95_abs": 3.5073558598146835e-07,
+            "rmse": 1.4621609869873656e-07,
+            "shape": [
+              2,
+              17,
+              17
+            ]
+          },
+          "lower_bound": 2.3908472089289014e-06,
+          "lower_bound_delta": -8.802369593005057e-09,
+          "lower_bound_sign_unchanged": true,
+          "mean_gain_delta": -1.4419923135857075e-08,
+          "mean_gain_g": 3.0220243943317813e-06,
+          "official_status": "SUPPORTED_BEYOND_UNCERTAINTY",
+          "thermal_final_frost": {
+            "fraction_abs_gt_epsilon": 0.0,
+            "max_abs": 0.0,
+            "mean_signed_delta": 0.0,
+            "n": 65536,
+            "p50_abs": 0.0,
+            "p95_abs": 0.0,
+            "p99_abs": 0.0,
+            "rmse": 0.0
+          },
+          "thermal_final_temperature": {
+            "fraction_abs_gt_epsilon": 0.9461517333984375,
+            "max_abs": 2.052194739578084,
+            "mean_signed_delta": 0.016353013046622414,
+            "n": 65536,
+            "p50_abs": 0.015919459235874456,
+            "p95_abs": 0.2765351006347885,
+            "p99_abs": 0.6445584505140531,
+            "rmse": 0.14647690206271782
+          }
+        },
+        "distance_only": {
+          "class_unchanged": true,
+          "correlation_lower_bound": 0.7622617558948815,
+          "delta_lower_bound_within_u": true,
+          "delta_mean_gain_within_u": true,
+          "four_state": "BEYOND_UNCERTAINTY",
+          "local_radiance_change_after_local_field": {
+            "max_abs": 4.942858495691658e-07,
+            "p95_abs": 1.0882989339012584e-07,
+            "rmse": 6.854512493110333e-08,
+            "shape": [
+              2,
+              17,
+              17
+            ]
+          },
+          "local_radiance_change_calibrated": {
+            "max_abs": 5.504410470704335e-07,
+            "p95_abs": 2.1558599623173728e-07,
+            "rmse": 8.796446371417429e-08,
+            "shape": [
+              2,
+              17,
+              17
+            ]
+          },
+          "lower_bound": 2.4054520146031475e-06,
+          "lower_bound_delta": 5.8024360812410025e-09,
+          "lower_bound_sign_unchanged": true,
+          "mean_gain_delta": 1.7338796449148903e-09,
+          "mean_gain_g": 3.0381781971125533e-06,
+          "official_status": "SUPPORTED_BEYOND_UNCERTAINTY",
+          "thermal_final_frost": {
+            "fraction_abs_gt_epsilon": 0.0,
+            "max_abs": 0.0,
+            "mean_signed_delta": 0.0,
+            "n": 65536,
+            "p50_abs": 0.0,
+            "p95_abs": 0.0,
+            "p99_abs": 0.0,
+            "rmse": 0.0
+          },
+          "thermal_final_temperature": {
+            "fraction_abs_gt_epsilon": 0.25506591796875,
+            "max_abs": 4.118452858606929,
+            "mean_signed_delta": -0.0752453150643869,
+            "n": 65536,
+            "p50_abs": 0.0,
+            "p95_abs": 0.3300025881023103,
+            "p99_abs": 1.667656045788525,
+            "rmse": 0.295392751563828
+          }
+        },
+        "joint": {
+          "class_unchanged": true,
+          "correlation_lower_bound": 0.7622431299533039,
+          "delta_lower_bound_within_u": true,
+          "delta_mean_gain_within_u": true,
+          "four_state": "BEYOND_UNCERTAINTY",
+          "local_radiance_change_after_local_field": {
+            "max_abs": 6.815946794954281e-07,
+            "p95_abs": 2.5620290057759305e-07,
+            "rmse": 1.2166171506103308e-07,
+            "shape": [
+              2,
+              17,
+              17
+            ]
+          },
+          "local_radiance_change_calibrated": {
+            "max_abs": 8.640796270338049e-07,
+            "p95_abs": 3.3421716125975383e-07,
+            "rmse": 1.487713783321755e-07,
+            "shape": [
+              2,
+              17,
+              17
+            ]
+          },
+          "lower_bound": 2.3941058881987155e-06,
+          "lower_bound_delta": -5.5436903231910065e-09,
+          "lower_bound_sign_unchanged": true,
+          "mean_gain_delta": -1.4844876396638846e-08,
+          "mean_gain_g": 3.0215994410709996e-06,
+          "official_status": "SUPPORTED_BEYOND_UNCERTAINTY",
+          "thermal_final_frost": {
+            "fraction_abs_gt_epsilon": 0.0,
+            "max_abs": 0.0,
+            "mean_signed_delta": 0.0,
+            "n": 65536,
+            "p50_abs": 0.0,
+            "p95_abs": 0.0,
+            "p99_abs": 0.0,
+            "rmse": 0.0
+          },
+          "thermal_final_temperature": {
+            "fraction_abs_gt_epsilon": 0.9541015625,
+            "max_abs": 3.8300866244591987,
+            "mean_signed_delta": -0.06560400078367053,
+            "n": 65536,
+            "p50_abs": 0.03353737020476899,
+            "p95_abs": 0.5879548141532283,
+            "p99_abs": 1.948590419205102,
+            "rmse": 0.3559389462543524
+          }
+        }
+      }
+    }
+  }
+}

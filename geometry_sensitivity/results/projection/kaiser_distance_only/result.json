@@ -1,0 +1,80 @@
+{
+  "all_product_correlation_lower_bounds_positive": true,
+  "all_product_gains_positive": true,
+  "by_product": {
+    "IA5986002SNU": {
+      "correlation_by_band": [
+        0.8083426232605165,
+        0.8056027113850015
+      ],
+      "correlation_interval_95": [
+        0.7435355386286335,
+        0.8815760802632224
+      ],
+      "correlation_lower_95_one_sided": 0.7622617558948815,
+      "e0_by_band": [
+        5.308691782916961e-06,
+        1.0717083506297144e-05
+      ],
+      "e3_by_band": [
+        3.217853743880917e-06,
+        6.731565151108082e-06
+      ],
+      "gain_g_by_band": [
+        2.090838039036044e-06,
+        3.985518355189062e-06
+      ],
+      "gain_g_interval_95": [
+        2.2067763178831027e-06,
+        4.571745304763046e-06
+      ],
+      "gain_g_lower_95_one_sided": 2.4054520146031475e-06,
+      "mean_correlation": 0.8069726673227591,
+      "mean_gain_g": 3.0381781971125533e-06,
+      "moving_block_count": 154,
+      "registration_east_m": -157.1371,
+      "registration_south_m": 434.2769,
+      "resamples": 10000,
+      "state_paths": [
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/kaiser_distance_only/attempt-001/shard0/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/kaiser_distance_only/attempt-001/shard0/states/chunk-00001.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/kaiser_distance_only/attempt-001/shard0/states/chunk-00002.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/kaiser_distance_only/attempt-001/shard0/states/chunk-00003.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/kaiser_distance_only/attempt-001/shard1/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/kaiser_distance_only/attempt-001/shard1/states/chunk-00001.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/kaiser_distance_only/attempt-001/shard1/states/chunk-00002.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/kaiser_distance_only/attempt-001/shard1/states/chunk-00003.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/kaiser_distance_only/attempt-001/shard2/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/kaiser_distance_only/attempt-001/shard2/states/chunk-00001.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/kaiser_distance_only/attempt-001/shard2/states/chunk-00002.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/kaiser_distance_only/attempt-001/shard2/states/chunk-00003.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/kaiser_distance_only/attempt-001/shard3/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/kaiser_distance_only/attempt-001/shard3/states/chunk-00001.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/kaiser_distance_only/attempt-001/shard3/states/chunk-00002.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/kaiser_distance_only/attempt-001/shard3/states/chunk-00003.pt"
+      ],
+      "status": "SUPPORTED_BEYOND_UNCERTAINTY"
+    }
+  },
+  "claim_boundary": "Sensitivity projection with the existing observation operator and calibration parameters frozen. This diagnostic does not refit calibration.",
+  "elapsed_s": 1.8127033710479736,
+  "frozen_design_operator": {
+    "frozen_gain": [
+      0.40868345175003573,
+      0.5445539166545512
+    ],
+    "frozen_offset": [
+      8.709316850140791e-06,
+      2.0143068522460303e-05
+    ],
+    "psf_sigma_m": 49.39391655001425,
+    "registration_east_offset_m": -100.0,
+    "registration_south_offset_m": 450.0,
+    "smoothing_sigma_pixels": 3.0
+  },
+  "run_id": "GEOM-SENS-20261012-KAISER-DISTANCE_ONLY-FROZEN-OBS-PROJECTION",
+  "schema_version": 1,
+  "status": "SUPPORTED_BEYOND_UNCERTAINTY",
+  "strip_equal_mean_gain_g": 3.0381781971125533e-06,
+  "u_val_conservative": 2.0594118204307127e-06
+}

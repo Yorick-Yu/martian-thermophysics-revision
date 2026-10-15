@@ -1,0 +1,96 @@
+{
+  "purpose": "Compare frozen observation projections at 128 versus 362 horizon cells for identical expanded same-product DTM; no refitting or changed projection/calibration.",
+  "schema_version": 1,
+  "sites": {
+    "gasa": {
+      "by_product": {
+        "I88618002SNU": {
+          "correlation_lower_95_one_sided_128": 0.3119409500347349,
+          "correlation_lower_95_one_sided_362": 0.2776893352247092,
+          "delta_gain_lower_95_one_sided": -3.397677354729509e-08,
+          "delta_mean_gain_g": -6.786249930627466e-08,
+          "four_state_128": "POSITIVE_WITHIN_UNCERTAINTY",
+          "four_state_362": "POSITIVE_WITHIN_UNCERTAINTY",
+          "four_state_unchanged": true,
+          "gain_lower_95_one_sided_128": 5.5442265120211534e-08,
+          "gain_lower_95_one_sided_362": 2.1465491572916448e-08,
+          "gain_lower_sign_128": 1,
+          "gain_lower_sign_362": 1,
+          "gain_lower_sign_unchanged": true,
+          "mean_gain_g_128": 1.1357779857463022e-07,
+          "mean_gain_g_362": 4.571529926835556e-08,
+          "projection_report_status_128": "POSITIVE_BUT_NOT_SEPARABLE_FROM_UNCERTAINTY",
+          "projection_report_status_362": "POSITIVE_BUT_NOT_SEPARABLE_FROM_UNCERTAINTY",
+          "radiance_field_change": {
+            "calibrated_b3": {
+              "max_abs": 3.634155168506109e-06,
+              "mean_signed_362_minus_128": -1.6314277666920844e-07,
+              "p95_abs": 9.084269763734213e-07,
+              "p99_abs": 2.1060596085439273e-06,
+              "rmse": 4.417886067092489e-07
+            },
+            "g_b3": {
+              "max_abs": 2.529976915482092e-06,
+              "mean_signed_362_minus_128": 3.6365304713592863e-09,
+              "p95_abs": 5.12663708598156e-07,
+              "p99_abs": 1.1858311251242634e-06,
+              "rmse": 2.7260994885916614e-07
+            }
+          },
+          "u_val_conservative": 4.252676151837666e-07
+        }
+      },
+      "dtm_sha256_identical": true,
+      "frozen_parameters_identical": true,
+      "result_sha256": {
+        "128": "c5d9bde01ebd4a7ed04139c46c6639729da806d4ea98af8059821940e733794b",
+        "362": "aed387cfebe9bc2f2824661883e77e2e388cb81f00d9f5ec72515e8ef3f76437"
+      }
+    },
+    "kaiser": {
+      "by_product": {
+        "IA5986002SNU": {
+          "correlation_lower_95_one_sided_128": 0.8083084244970248,
+          "correlation_lower_95_one_sided_362": 0.8186183479344512,
+          "delta_gain_lower_95_one_sided": 1.7258720987434544e-07,
+          "delta_mean_gain_g": 1.821948604276857e-07,
+          "four_state_128": "BEYOND_UNCERTAINTY",
+          "four_state_362": "BEYOND_UNCERTAINTY",
+          "four_state_unchanged": true,
+          "gain_lower_95_one_sided_128": 2.917573183103468e-06,
+          "gain_lower_95_one_sided_362": 3.0901603929778135e-06,
+          "gain_lower_sign_128": 1,
+          "gain_lower_sign_362": 1,
+          "gain_lower_sign_unchanged": true,
+          "mean_gain_g_128": 3.418457714855482e-06,
+          "mean_gain_g_362": 3.600652575283168e-06,
+          "projection_report_status_128": "SUPPORTED_BEYOND_UNCERTAINTY",
+          "projection_report_status_362": "SUPPORTED_BEYOND_UNCERTAINTY",
+          "radiance_field_change": {
+            "calibrated_b3": {
+              "max_abs": 7.334621321133765e-06,
+              "mean_signed_362_minus_128": -6.379648118377643e-07,
+              "p95_abs": 3.4117637924630285e-06,
+              "p99_abs": 6.130107666851586e-06,
+              "rmse": 1.3706122834303273e-06
+            },
+            "g_b3": {
+              "max_abs": 4.591560277174018e-06,
+              "mean_signed_362_minus_128": 1.95918742174114e-08,
+              "p95_abs": 1.939942264264208e-06,
+              "p99_abs": 3.85893034378177e-06,
+              "rmse": 8.677362966287056e-07
+            }
+          },
+          "u_val_conservative": 2.0594118204307127e-06
+        }
+      },
+      "dtm_sha256_identical": true,
+      "frozen_parameters_identical": true,
+      "result_sha256": {
+        "128": "7702c4a03747fe5e128f683a30a009d83a812741750103aaa1b0f82a32bb2b96",
+        "362": "03d6e82bc42f365f9b8a685dbd32d15fbe65a72e0cd279d31a3032e6431599e3"
+      }
+    }
+  }
+}

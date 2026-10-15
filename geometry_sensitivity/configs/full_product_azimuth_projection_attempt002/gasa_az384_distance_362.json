@@ -1,0 +1,56 @@
+{
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 2026081201,
+  "claim_boundary": "Frozen observation projection of full available official PDS DTM simulation. Product-edge and internal no-data limits are documented in qa/full_product_dtm_build_audit_v1.json.",
+  "dtm_path": "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/inputs/wider_dem/gasa/DTEEC_021584_1440_022217_1440_A01.GASA_FULL_PRODUCT_v1.npz",
+  "dtm_sha256": "93c76b1d45b9c1baaf2683c5e239b2c1c784884f9dd2b8b4a6f2fd61c70bb6d9",
+  "emissivity": 0.95,
+  "frozen_gain": [
+    0.05609705445252907,
+    0.06568172331615388
+  ],
+  "frozen_offset": [
+    2.3683617852098043e-05,
+    6.639116246599137e-05
+  ],
+  "frozen_registration_east_offset_m": 150.0,
+  "frozen_registration_south_offset_m": 250.0,
+  "minimum_pixel_support_fraction": 0.95,
+  "moving_block_side_pixels": 3,
+  "output_dir": "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/results/full_product_azimuth_projection_attempt002/gasa_az384_distance_362",
+  "patch_radius_pixels": 8,
+  "pds_temperature_radiance_table": "/autodl-fs/data/qq/formal-mars-experiments-20260808/FORMAL-E6-INSTRUMENT-ASSET-FETCH-V1/assets/temp2rad_file",
+  "pixel_scale_m": 100.0,
+  "project_root": "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/code",
+  "psf_sigma_m": 49.39391655001425,
+  "quadrature_axis_count": 32,
+  "run_id": "GEOM-SENS-20261013-GASA-FULL-PRODUCT-24AZ-362CELL-FROZEN-PROJECTION-ATTEMPT-002-V2-AZ192-ATTEMPT-001-AZ384-ATTEMPT-002",
+  "schema_version": 1,
+  "smoothing_sigma_pixels": 2.0,
+  "surface_band_indices_zero_based": [
+    3,
+    8
+  ],
+  "u_val_conservative": 4.252676151837666e-07,
+  "validation_products": [
+    {
+      "base_registration_east_m": 60.32755210294124,
+      "base_registration_south_m": -507.47221976394343,
+      "cube_offset_bytes": 65536,
+      "cube_path": "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/inputs/observation/gasa/I88618002SNU.CUB",
+      "cube_shape": [
+        10,
+        1854,
+        557
+      ],
+      "event_pixel_line_sample_zero_based": [
+        1229,
+        290
+      ],
+      "product_id": "I88618002SNU",
+      "state_globs": [
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/full_product_azimuth/gasa_az384_distance_362/attempt-002/shard*/states/chunk-*.pt"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "README.txt": "9122295b20cefb0e9a2e4f1180b6b8c6ab6bab828a98ceb9a14dc6a9b85d7a42",
+  "make_figures.py": "0db2883ca1c572f695c01c8cb967ac886ede0a09391a8f8f81b1360e5ee346c0",
+  "reproduce_analysis.py": "8eb8e88d1506a597f7adf2c90263cce452212aa3d5f9ec6af208fc8c236da438",
+  "requirements.txt": "2c12258626c168bd23501755fc08d09245c5700340bb1b5d27431bf469f519d8",
+  "thermal_source/run_torch_gasa_shadow.py": "7b7b2e5c0fe7db6c792258b0a983e04de1a75f5ff2545435679a6adb173dee4f",
+  "thermal_source/src/mars_frost/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "thermal_source/src/mars_frost/mars_forcing.py": "4b827a3ee94c5de108f911df3dd6ab1ed4dffe9f224bdefc7b967339cf83dc8d",
+  "thermal_source/src/mars_frost/mcd_forcing.py": "c780890bd12c84898a8027c725719d6e108384ff0997b40f14ca79c02003d55b",
+  "thermal_source/src/mars_frost/radiation.py": "e82edd90899be875ac4df2b285e715d6fb1f2b458523c8d242d32d6f06a6ca1b",
+  "thermal_source/src/mars_frost/torch_b1.py": "31a42d705c941bdd42527185cb35346be4deebac33665a5ddb4c71a0c8ad9073",
+  "thermal_source/src/mars_frost/torch_topographic_shadow.py": "d212ad6f398cdae2fe138cb225374053c42a7541ec7cacc3ee17c2a139fff6a7"
+}

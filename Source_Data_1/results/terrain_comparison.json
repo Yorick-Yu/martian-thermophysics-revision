@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Compare native terrain complexity with sensor-scale B3 local-field observability.",
+  "gasa": {
+    "dtm_spacing_m": 8.0299,
+    "valid_fraction": 0.9065,
+    "elevation_range_m": 939.905,
+    "slope_deg_percentiles": {"p50": 20.11, "p75": 33.27, "p90": 36.82, "p95": 39.44, "p99": 51.01},
+    "relief_100m_percentiles_m": {"p50": 47.83, "p75": 71.68, "p90": 84.49, "p95": 90.96, "p99": 121.43},
+    "highpass_100m_abs_p95_m": 8.666,
+    "b3_local_field_coherence_length_m_by_band": [93.94, 94.19],
+    "b3_local_field_abs_p95_by_band": [2.075e-6, 3.536e-6],
+    "strict_external_evidence": false
+  },
+  "kaiser": {
+    "dtm_product_id": "DTEEC_013017_1325_013083_1325_U01",
+    "center_latitude_deg": -47.2,
+    "center_longitude_deg_east": 19.48,
+    "dtm_spacing_m": 7.99372,
+    "valid_fraction": 1.0,
+    "elevation_range_m": 257.777,
+    "slope_deg_percentiles": {"p50": 9.77, "p75": 13.81, "p90": 17.42, "p95": 20.51, "p99": 27.37},
+    "relief_100m_percentiles_m": {"p95": 41.66},
+    "highpass_100m_abs_p95_m": 2.242,
+    "b3_local_field_coherence_length_m_by_band": [125.64, 129.76],
+    "b3_local_field_abs_p95_by_band": [7.250e-6, 1.6923e-5],
+    "strict_external_evidence": true
+  },
+  "interpretation": "Native steepness and relief alone do not determine B3 usefulness. The supported Kaiser case has a broader and stronger B3 local field at the approximately 100 m sensor scale than Gasa, despite lower native terrain roughness."
+}

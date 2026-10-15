@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "purpose": "Final thermal-field angular sensitivity within the event-centered radius on common valid cells. This uses same 256x256 DTM and model input except horizon azimuth count.",
+  "roi_radius_cells": 80,
+  "sites": {
+    "gasa": {
+      "roi_valid_cell_count": 20090,
+      "roi_center_row_col": [
+        127.96246524481103,
+        128.04653156134037
+      ],
+      "adjacent": {
+        "24_to_48": {
+          "shadow_final_surface_temperature_k": {
+            "n": 20090,
+            "rmse": 2.556965775457741,
+            "p95_abs": 3.756372763446978,
+            "p99_abs": 13.380509316341884,
+            "max_abs": 32.632724447993354
+          },
+          "shadow_final_frost_mass_kg_m2": {
+            "n": 20090,
+            "rmse": 0.4988917081108738,
+            "p95_abs": 0.8260982502531745,
+            "p99_abs": 2.6156976728104517,
+            "max_abs": 7.872540108005868
+          },
+          "frost_presence_flip_count": 136
+        },
+        "48_to_96": {
+          "shadow_final_surface_temperature_k": {
+            "n": 20090,
+            "rmse": 0.19970832774683983,
+            "p95_abs": 0.15856423151920324,
+            "p99_abs": 0.27076286618707146,
+            "max_abs": 15.42713818658305
+          },
+          "shadow_final_frost_mass_kg_m2": {
+            "n": 20090,
+            "rmse": 0.21206327760227062,
+            "p95_abs": 0.29213141310225926,
+            "p99_abs": 1.0131168321733253,
+            "max_abs": 4.413770876609273
+          },
+          "frost_presence_flip_count": 46
+        },
+        "96_to_192": {
+          "shadow_final_surface_temperature_k": {
+            "n": 20090,
+            "rmse": 0.8620073496672029,
+            "p95_abs": 1.0230173014282613,
+            "p99_abs": 3.8449192841278443,
+            "max_abs": 15.685174339652718
+          },
+          "shadow_final_frost_mass_kg_m2": {
+            "n": 20090,
+            "rmse": 0.07620864298896386,
+            "p95_abs": 0.08524855275860099,
+            "p99_abs": 0.28389489107941046,
+            "max_abs": 2.517601377846579
+          },
+          "frost_presence_flip_count": 29
+        }
+      }
+    },
+    "kaiser": {
+      "roi_valid_cell_count": 20097,
+      "roi_center_row_col": [
+        128.0622141500353,
+        128.0625
+      ],
+      "adjacent": {
+        "24_to_48": {
+          "shadow_final_surface_temperature_k": {
+            "n": 20097,
+            "rmse": 0.2057830464271585,
+            "p95_abs": 0.5609688031358762,
+            "p99_abs": 0.9093346646518986,
+            "max_abs": 1.29048286596543
+          },
+          "shadow_final_frost_mass_kg_m2": {
+            "n": 20097,
+            "rmse": 0.0,
+            "p95_abs": 0.0,
+            "p99_abs": 0.0,
+            "max_abs": 0.0
+          },
+          "frost_presence_flip_count": 0
+        },
+        "48_to_96": {
+          "shadow_final_surface_temperature_k": {
+            "n": 20097,
+            "rmse": 0.09563801265318528,
+            "p95_abs": 0.23359352758917573,
+            "p99_abs": 0.39959001076972767,
+            "max_abs": 0.6287984998411389
+          },
+          "shadow_final_frost_mass_kg_m2": {
+            "n": 20097,
+            "rmse": 0.0,
+            "p95_abs": 0.0,
+            "p99_abs": 0.0,
+            "max_abs": 0.0
+          },
+          "frost_presence_flip_count": 0
+        },
+        "96_to_192": {
+          "shadow_final_surface_temperature_k": {
+            "n": 20097,
+            "rmse": 0.057453020539531434,
+            "p95_abs": 0.13228217646469057,
+            "p99_abs": 0.2806806940611853,
+            "max_abs": 0.4693227181132329
+          },
+          "shadow_final_frost_mass_kg_m2": {
+            "n": 20097,
+            "rmse": 0.0,
+            "p95_abs": 0.0,
+            "p99_abs": 0.0,
+            "max_abs": 0.0
+          },
+          "frost_presence_flip_count": 0
+        }
+      }
+    }
+  }
+}

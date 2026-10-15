@@ -1,0 +1,120 @@
+{
+  "all_product_correlation_lower_bounds_positive": true,
+  "all_product_gains_positive": true,
+  "by_product": {
+    "I88618002SNU": {
+      "correlation_by_band": [
+        0.11974108943138259,
+        0.38343280000119523
+      ],
+      "correlation_interval_95": [
+        0.2591047314042266,
+        0.4852461851063407
+      ],
+      "correlation_lower_95_one_sided": 0.2776893352247092,
+      "e0_by_band": [
+        1.0988743415271556e-06,
+        2.157763715171003e-06
+      ],
+      "e3_by_band": [
+        1.0916313719475697e-06,
+        2.0735760862138777e-06
+      ],
+      "gain_g_by_band": [
+        7.242969579585921e-09,
+        8.41876289571252e-08
+      ],
+      "gain_g_interval_95": [
+        1.849917159251091e-08,
+        8.157453915529245e-08
+      ],
+      "gain_g_lower_95_one_sided": 2.1465491572916448e-08,
+      "mean_correlation": 0.2515869447162889,
+      "mean_gain_g": 4.571529926835556e-08,
+      "moving_block_count": 225,
+      "registration_east_m": 210.32755210294124,
+      "registration_south_m": -257.47221976394343,
+      "resamples": 10000,
+      "state_paths": [
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard0/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard0/states/chunk-00001.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard0/states/chunk-00002.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard0/states/chunk-00003.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard0/states/chunk-00004.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard0/states/chunk-00005.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard0/states/chunk-00006.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard0/states/chunk-00007.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard0/states/chunk-00008.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard0/states/chunk-00009.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard0/states/chunk-00010.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard0/states/chunk-00011.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard0/states/chunk-00012.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard0/states/chunk-00013.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard1/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard1/states/chunk-00001.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard1/states/chunk-00002.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard1/states/chunk-00003.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard1/states/chunk-00004.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard1/states/chunk-00005.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard1/states/chunk-00006.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard1/states/chunk-00007.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard1/states/chunk-00008.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard1/states/chunk-00009.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard1/states/chunk-00010.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard1/states/chunk-00011.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard1/states/chunk-00012.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard1/states/chunk-00013.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard2/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard2/states/chunk-00001.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard2/states/chunk-00002.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard2/states/chunk-00003.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard2/states/chunk-00004.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard2/states/chunk-00005.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard2/states/chunk-00006.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard2/states/chunk-00007.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard2/states/chunk-00008.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard2/states/chunk-00009.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard2/states/chunk-00010.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard2/states/chunk-00011.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard2/states/chunk-00012.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard2/states/chunk-00013.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard3/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard3/states/chunk-00001.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard3/states/chunk-00002.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard3/states/chunk-00003.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard3/states/chunk-00004.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard3/states/chunk-00005.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard3/states/chunk-00006.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard3/states/chunk-00007.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard3/states/chunk-00008.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard3/states/chunk-00009.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard3/states/chunk-00010.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard3/states/chunk-00011.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard3/states/chunk-00012.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/expanded_range/gasa_distance_362/attempt-001/shard3/states/chunk-00013.pt"
+      ],
+      "status": "POSITIVE_BUT_NOT_SEPARABLE_FROM_UNCERTAINTY"
+    }
+  },
+  "claim_boundary": "Frozen observation operator and calibration applied to full expanded same-product HiRISE DTM simulation. Directional DTM coverage varies by product boundary and valid mask; see terrain coverage audit.",
+  "elapsed_s": 5.873782634735107,
+  "frozen_design_operator": {
+    "frozen_gain": [
+      0.05609705445252907,
+      0.06568172331615388
+    ],
+    "frozen_offset": [
+      2.3683617852098043e-05,
+      6.639116246599137e-05
+    ],
+    "psf_sigma_m": 49.39391655001425,
+    "registration_east_offset_m": 150.0,
+    "registration_south_offset_m": 250.0,
+    "smoothing_sigma_pixels": 2.0
+  },
+  "run_id": "GEOM-SENS-20261013-GASA-EXPANDED-DTM-24AZ-362CELL-FROZEN-PROJECTION",
+  "schema_version": 1,
+  "status": "POSITIVE_BUT_NOT_SEPARABLE_FROM_UNCERTAINTY",
+  "strip_equal_mean_gain_g": 4.571529926835556e-08,
+  "u_val_conservative": 4.252676151837666e-07
+}

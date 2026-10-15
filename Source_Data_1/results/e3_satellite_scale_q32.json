@@ -1,0 +1,108 @@
+{
+  "by_grid_relative_to_256": {
+    "128": {
+      "absolute_local_structure_p95": 6.469630689885308e-06,
+      "absolute_radiance_p95": 1.5161078011886977e-05,
+      "local_structure_rmse": 2.9556970606135905e-06,
+      "relative_local_structure_p95": 0.16054490552871858,
+      "relative_raw_radiance_p95": 0.08654041620798143,
+      "rmse": 6.6587527175892935e-06
+    },
+    "64": {
+      "absolute_local_structure_p95": 1.0921178931095077e-05,
+      "absolute_radiance_p95": 2.5185487788373004e-05,
+      "local_structure_rmse": 5.211063968755174e-06,
+      "relative_local_structure_p95": 0.27101077693601294,
+      "relative_raw_radiance_p95": 0.14376039711014987,
+      "rmse": 1.1994829771779611e-05
+    }
+  },
+  "claim_boundary": "Numerical B3 satellite-scale convergence after linear interpolation between stored model states to the Design local time on the closest modeled season. It does not use the Design science array and does not establish agreement with real THEMIS radiance.",
+  "common_valid_pixel_count": 269,
+  "decision": {
+    "error_decreases_from_64_to_128": true,
+    "pass": false,
+    "production_grid": 128,
+    "production_relative_raw_radiance_p95": 0.08654041620798143,
+    "reference_grid": 256,
+    "relative_p95_limit": 0.05
+  },
+  "elapsed_s": 3.960268974304199,
+  "inputs": {
+    "128": {
+      "dtm_path": "/home/qq/mars-r-rebuild-gasa/data/gasa/formal_dtm_pyramid_v1/DTEEC_021584_1440_022217_1440_A01.GASA_EVENT_128x128_formal_v1.npz",
+      "dtm_sha256": "48709ed183a6fd13f3c0f936e490a0ea9abf117a6ccf1cbfe92e69692250df2e",
+      "event_grid_coordinate": [
+        63.512482622405514,
+        63.55451578067019
+      ],
+      "grid_spacing_m": 16.0598310373168,
+      "minimum_sampled_support": 0.04979497233564578,
+      "run_dir": "/autodl-fs/data/qq/formal-mars-experiments-20260808/runs/FORMAL-E3-GRID-128-V3",
+      "state_count": 4,
+      "valid_dtm_cells": 14816
+    },
+    "256": {
+      "dtm_path": "/home/qq/mars-r-rebuild-gasa/data/gasa/formal_dtm_pyramid_v1/DTEEC_021584_1440_022217_1440_A01.GASA_EVENT_256x256_formal_v1.npz",
+      "dtm_sha256": "cea45cf22099b325b21d180ae4e99a31220af1d26a9aa3213162a721e667cef0",
+      "event_grid_coordinate": [
+        127.52496524481103,
+        127.60903156134037
+      ],
+      "grid_spacing_m": 8.0299155186584,
+      "minimum_sampled_support": 0.0595600559353059,
+      "run_dir": "/autodl-fs/data/qq/formal-mars-experiments-20260808/runs/FORMAL-E3-GRID-256-V3",
+      "state_count": 15,
+      "valid_dtm_cells": 59409
+    },
+    "64": {
+      "dtm_path": "/home/qq/mars-r-rebuild-gasa/data/gasa/formal_dtm_pyramid_v1/DTEEC_021584_1440_022217_1440_A01.GASA_EVENT_64x64_formal_v1.npz",
+      "dtm_sha256": "a2ce7948551cfd4d69f8bd6c0d7d3c6c1aa9443720d388137c2928f0d5b7a96b",
+      "event_grid_coordinate": [
+        31.506241311202757,
+        31.527257890335093
+      ],
+      "grid_spacing_m": 32.1196620746336,
+      "minimum_sampled_support": 0.03608796257775442,
+      "run_dir": "/autodl-fs/data/qq/formal-mars-experiments-20260808/runs/FORMAL-E3-GRID-64-V3",
+      "state_count": 1,
+      "valid_dtm_cells": 3686
+    }
+  },
+  "operator": {
+    "bands": 3,
+    "patch_side_pixels": 17,
+    "pixel_scale_m": 100.0,
+    "psf_sigma_m": 49.39391655001425,
+    "quadrature_axis_count": 32,
+    "spectral_operator": "NASA PDS THEMIS temp_rad_v4 lookup"
+  },
+  "run_id": "P31-E3-B3-SATELLITE-SCALE-STABILITY-V3-Q32-TIME-INTERPOLATED",
+  "schema_version": 1,
+  "selected_model_phase": {
+    "interpolated_local_time_hours": 7.318,
+    "interpolated_solar_longitude_deg": 161.67566744024674,
+    "left_elapsed_s": 30110475.0,
+    "left_local_time_hours": 4.235581892627079,
+    "left_snapshot_index": 1393,
+    "left_snapshot_step_in_year": 200736,
+    "left_solar_longitude_deg": 161.60545220911422,
+    "local_time_offset_hours": 0.0,
+    "right_elapsed_s": 30132075.0,
+    "right_interpolation_weight": 0.5278596056946036,
+    "right_local_time_hours": 10.075047678832071,
+    "right_snapshot_index": 1394,
+    "right_snapshot_step_in_year": 200880,
+    "right_solar_longitude_deg": 161.73848457614457,
+    "solar_longitude_offset_deg": 0.13533255975326597,
+    "target_elapsed_s": 30121876.767483003,
+    "target_sol_index": 339
+  },
+  "status": "FAIL",
+  "target_product": {
+    "local_time_hours": 7.318,
+    "product_id": "I89192002SNU",
+    "science_array_accessed": false,
+    "solar_longitude_deg": 161.811
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "all_product_correlation_lower_bounds_positive": true,
+  "all_product_gains_positive": true,
+  "by_product": {
+    "I88618002SNU": {
+      "correlation_by_band": [
+        0.3202790824147428,
+        0.45523259680556655
+      ],
+      "correlation_interval_95": [
+        0.2448332213883769,
+        0.5745985147891758
+      ],
+      "correlation_lower_95_one_sided": 0.288810529158633,
+      "e0_by_band": [
+        1.1034482551797486e-06,
+        2.0036843230364385e-06
+      ],
+      "e3_by_band": [
+        1.0508233011289522e-06,
+        1.81407487453723e-06
+      ],
+      "gain_g_by_band": [
+        5.262495405079638e-08,
+        1.8960944849920842e-07
+      ],
+      "gain_g_interval_95": [
+        3.75140884113707e-08,
+        2.43187998452275e-07
+      ],
+      "gain_g_lower_95_one_sided": 5.020634011372716e-08,
+      "mean_correlation": 0.3877558396101547,
+      "mean_gain_g": 1.211172012750024e-07,
+      "moving_block_count": 182,
+      "registration_east_m": 210.32755210294124,
+      "registration_south_m": -257.47221976394343,
+      "resamples": 10000,
+      "state_paths": [
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/gasa_joint/attempt-001/shard0/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/gasa_joint/attempt-001/shard0/states/chunk-00001.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/gasa_joint/attempt-001/shard0/states/chunk-00002.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/gasa_joint/attempt-001/shard0/states/chunk-00003.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/gasa_joint/attempt-001/shard1/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/gasa_joint/attempt-001/shard1/states/chunk-00001.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/gasa_joint/attempt-001/shard1/states/chunk-00002.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/gasa_joint/attempt-001/shard1/states/chunk-00003.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/gasa_joint/attempt-001/shard2/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/gasa_joint/attempt-001/shard2/states/chunk-00001.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/gasa_joint/attempt-001/shard2/states/chunk-00002.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/gasa_joint/attempt-001/shard2/states/chunk-00003.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/gasa_joint/attempt-001/shard3/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/gasa_joint/attempt-001/shard3/states/chunk-00001.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/gasa_joint/attempt-001/shard3/states/chunk-00002.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/gasa_joint/attempt-001/shard3/states/chunk-00003.pt"
+      ],
+      "status": "POSITIVE_BUT_NOT_SEPARABLE_FROM_UNCERTAINTY"
+    }
+  },
+  "claim_boundary": "Sensitivity projection with the existing observation operator and calibration parameters frozen. This diagnostic does not refit calibration.",
+  "elapsed_s": 2.1932265758514404,
+  "frozen_design_operator": {
+    "frozen_gain": [
+      0.05609705445252907,
+      0.06568172331615388
+    ],
+    "frozen_offset": [
+      2.3683617852098043e-05,
+      6.639116246599137e-05
+    ],
+    "psf_sigma_m": 49.39391655001425,
+    "registration_east_offset_m": 150.0,
+    "registration_south_offset_m": 250.0,
+    "smoothing_sigma_pixels": 2.0
+  },
+  "run_id": "GEOM-SENS-20261012-GASA-JOINT-FROZEN-OBS-PROJECTION",
+  "schema_version": 1,
+  "status": "POSITIVE_BUT_NOT_SEPARABLE_FROM_UNCERTAINTY",
+  "strip_equal_mean_gain_g": 1.211172012750024e-07,
+  "u_val_conservative": 4.252676151837666e-07
+}

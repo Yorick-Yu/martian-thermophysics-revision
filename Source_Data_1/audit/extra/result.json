@@ -1,0 +1,150 @@
+{
+  "all_product_correlation_lower_bounds_positive": false,
+  "all_product_gains_positive": false,
+  "by_product": {
+    "IA5830002SNU_morning_Ls159.691_LT7.008": {
+      "correlation_by_band": [
+        -0.053592640064400364,
+        -0.1029149312997788
+      ],
+      "correlation_interval_95": [
+        -0.270326605695539,
+        0.07706223706639675
+      ],
+      "correlation_lower_95_one_sided": -0.24325916149733282,
+      "e0_by_band": [
+        1.1254266224857472e-06,
+        2.2687248643749632e-06
+      ],
+      "e3_by_band": [
+        1.378580259838629e-06,
+        3.6453466098423942e-06
+      ],
+      "gain_g_by_band": [
+        -2.531536373528818e-07,
+        -1.376621745467431e-06
+      ],
+      "gain_g_interval_95": [
+        -1.1227804340652847e-06,
+        -5.058641159088746e-07
+      ],
+      "gain_g_lower_95_one_sided": -1.0668876206689691e-06,
+      "mean_correlation": -0.07825378568208959,
+      "mean_gain_g": -8.148876914101564e-07,
+      "moving_block_count": 165,
+      "registration_east_m": -110.5043,
+      "registration_south_m": 434.2769,
+      "resamples": 10000,
+      "state_paths": [
+        "/home/yqs/p31-b3-boundary/runs/P31-E6-KAISER-128-MORNING-EXACT-shard0/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/runs/P31-E6-KAISER-128-MORNING-EXACT-shard1/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/runs/P31-E6-KAISER-128-MORNING-EXACT-shard2/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/runs/P31-E6-KAISER-128-MORNING-EXACT-shard3/states/chunk-00000.pt"
+      ],
+      "status": "NO_POSITIVE_RECONSTRUCTION_EVIDENCE"
+    },
+    "IA5986002SNU_evening_Ls166.545_LT18.618": {
+      "correlation_by_band": [
+        0.8087405453585983,
+        0.805755764904265
+      ],
+      "correlation_interval_95": [
+        0.7473604627066063,
+        0.88432537502747
+      ],
+      "correlation_lower_95_one_sided": 0.7642159170331115,
+      "e0_by_band": [
+        5.3086917829169646e-06,
+        1.0717083506297147e-05
+      ],
+      "e3_by_band": [
+        3.214529732282733e-06,
+        6.728050235730569e-06
+      ],
+      "gain_g_by_band": [
+        2.0941620506342316e-06,
+        3.989033270566578e-06
+      ],
+      "gain_g_interval_95": [
+        2.2393653182276764e-06,
+        4.61731115610222e-06
+      ],
+      "gain_g_lower_95_one_sided": 2.4243971263945683e-06,
+      "mean_correlation": 0.8072481551314317,
+      "mean_gain_g": 3.0415976606004047e-06,
+      "moving_block_count": 154,
+      "registration_east_m": -157.1371,
+      "registration_south_m": 434.2769,
+      "resamples": 10000,
+      "state_paths": [
+        "/home/yqs/p31-b3-boundary/runs/P31-E6-KAISER-128-EXT-EXACT-shard0/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/runs/P31-E6-KAISER-128-EXT-EXACT-shard1/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/runs/P31-E6-KAISER-128-EXT-EXACT-shard2/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/runs/P31-E6-KAISER-128-EXT-EXACT-shard3/states/chunk-00000.pt"
+      ],
+      "status": "SUPPORTED_BEYOND_UNCERTAINTY"
+    },
+    "IA6273002SNU_evening_Ls179.581_LT18.648": {
+      "correlation_by_band": [
+        0.6767170117788858,
+        0.5427574968503445
+      ],
+      "correlation_interval_95": [
+        0.3980910674356628,
+        0.6698560565669659
+      ],
+      "correlation_lower_95_one_sided": 0.4220850437324956,
+      "e0_by_band": [
+        5.472203227044667e-06,
+        8.555635834542292e-06
+      ],
+      "e3_by_band": [
+        4.728643511347473e-06,
+        9.98086950563647e-06
+      ],
+      "gain_g_by_band": [
+        7.435597156971941e-07,
+        -1.4252336710941784e-06
+      ],
+      "gain_g_interval_95": [
+        -2.309264233759884e-06,
+        9.156852968978258e-07
+      ],
+      "gain_g_lower_95_one_sided": -2.0238598025268116e-06,
+      "mean_correlation": 0.6097372543146151,
+      "mean_gain_g": -3.4083697769849213e-07,
+      "moving_block_count": 154,
+      "registration_east_m": -146.5928,
+      "registration_south_m": 434.2769,
+      "resamples": 10000,
+      "state_paths": [
+        "/home/yqs/p31-b3-boundary/runs/P31-E6-KAISER-128-LATE-EXACT-shard0/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/runs/P31-E6-KAISER-128-LATE-EXACT-shard1/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/runs/P31-E6-KAISER-128-LATE-EXACT-shard2/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/runs/P31-E6-KAISER-128-LATE-EXACT-shard3/states/chunk-00000.pt"
+      ],
+      "status": "NO_POSITIVE_RECONSTRUCTION_EVIDENCE"
+    }
+  },
+  "claim_boundary": "Three Kaiser MY37 external strips spanning morning and evening conditions, all evaluated with operator parameters frozen on the MY36 evening calibration strip.",
+  "elapsed_s": 1.9841957092285156,
+  "frozen_design_operator": {
+    "frozen_gain": [
+      0.40868345175003573,
+      0.5445539166545512
+    ],
+    "frozen_offset": [
+      8.709316850140791e-06,
+      2.0143068522460303e-05
+    ],
+    "psf_sigma_m": 49.39391655001425,
+    "registration_east_offset_m": -100.0,
+    "registration_south_offset_m": 450.0,
+    "smoothing_sigma_pixels": 3.0
+  },
+  "run_id": "P31-E6-KAISER-MULTI-CONDITION-128-GRID-AUDIT",
+  "schema_version": 1,
+  "status": "OBSERVATION_CONDITION_DEPENDENT_OR_UNSUPPORTED",
+  "strip_equal_mean_gain_g": 6.28624330497252e-07,
+  "u_val_conservative": 2.1408484094397923e-06
+}

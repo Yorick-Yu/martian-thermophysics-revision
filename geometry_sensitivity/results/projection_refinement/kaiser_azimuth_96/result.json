@@ -1,0 +1,80 @@
+{
+  "all_product_correlation_lower_bounds_positive": true,
+  "all_product_gains_positive": true,
+  "by_product": {
+    "IA5986002SNU": {
+      "correlation_by_band": [
+        0.8079816846921696,
+        0.8051683062860584
+      ],
+      "correlation_interval_95": [
+        0.7438882040849882,
+        0.8806593252714962
+      ],
+      "correlation_lower_95_one_sided": 0.7621124124025342,
+      "e0_by_band": [
+        5.308691782916961e-06,
+        1.0717083506297144e-05
+      ],
+      "e3_by_band": [
+        3.2264303965303856e-06,
+        6.755587757808747e-06
+      ],
+      "gain_g_by_band": [
+        2.0822613863865755e-06,
+        3.961495748488397e-06
+      ],
+      "gain_g_interval_95": [
+        2.1947696432084847e-06,
+        4.555028152279171e-06
+      ],
+      "gain_g_lower_95_one_sided": 2.390677969993092e-06,
+      "mean_correlation": 0.8065749954891139,
+      "mean_gain_g": 3.0218785674374863e-06,
+      "moving_block_count": 154,
+      "registration_east_m": -157.1371,
+      "registration_south_m": 434.2769,
+      "resamples": 10000,
+      "state_paths": [
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/azimuth_refinement/kaiser_azimuth_96/attempt-002/shard0/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/azimuth_refinement/kaiser_azimuth_96/attempt-002/shard0/states/chunk-00001.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/azimuth_refinement/kaiser_azimuth_96/attempt-002/shard0/states/chunk-00002.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/azimuth_refinement/kaiser_azimuth_96/attempt-002/shard0/states/chunk-00003.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/azimuth_refinement/kaiser_azimuth_96/attempt-002/shard1/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/azimuth_refinement/kaiser_azimuth_96/attempt-002/shard1/states/chunk-00001.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/azimuth_refinement/kaiser_azimuth_96/attempt-002/shard1/states/chunk-00002.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/azimuth_refinement/kaiser_azimuth_96/attempt-002/shard1/states/chunk-00003.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/azimuth_refinement/kaiser_azimuth_96/attempt-002/shard2/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/azimuth_refinement/kaiser_azimuth_96/attempt-002/shard2/states/chunk-00001.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/azimuth_refinement/kaiser_azimuth_96/attempt-002/shard2/states/chunk-00002.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/azimuth_refinement/kaiser_azimuth_96/attempt-002/shard2/states/chunk-00003.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/azimuth_refinement/kaiser_azimuth_96/attempt-002/shard3/states/chunk-00000.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/azimuth_refinement/kaiser_azimuth_96/attempt-002/shard3/states/chunk-00001.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/azimuth_refinement/kaiser_azimuth_96/attempt-002/shard3/states/chunk-00002.pt",
+        "/home/yqs/p31-b3-boundary/geometry-sensitivity-20261012/runs/azimuth_refinement/kaiser_azimuth_96/attempt-002/shard3/states/chunk-00003.pt"
+      ],
+      "status": "SUPPORTED_BEYOND_UNCERTAINTY"
+    }
+  },
+  "claim_boundary": "Sensitivity projection with the existing observation operator and calibration parameters frozen. This diagnostic does not refit calibration.",
+  "elapsed_s": 1.940730333328247,
+  "frozen_design_operator": {
+    "frozen_gain": [
+      0.40868345175003573,
+      0.5445539166545512
+    ],
+    "frozen_offset": [
+      8.709316850140791e-06,
+      2.0143068522460303e-05
+    ],
+    "psf_sigma_m": 49.39391655001425,
+    "registration_east_offset_m": -100.0,
+    "registration_south_offset_m": 450.0,
+    "smoothing_sigma_pixels": 3.0
+  },
+  "run_id": "GEOM-SENS-20261012-KAISER-96AZ-128CELL-FROZEN-OBS-PROJECTION",
+  "schema_version": 1,
+  "status": "SUPPORTED_BEYOND_UNCERTAINTY",
+  "strip_equal_mean_gain_g": 3.0218785674374863e-06,
+  "u_val_conservative": 2.0594118204307127e-06
+}

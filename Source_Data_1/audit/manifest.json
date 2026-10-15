@@ -1,0 +1,62 @@
+[
+  {
+    "file": "remote_projection.py",
+    "sha256": "030d579c6845c3803627d8b58e83c271223441449409f6cbea8a39ffba124600",
+    "bytes": 4455
+  },
+  {
+    "file": "bootstrap_128.json",
+    "sha256": "f1b372f8f33a0d8e75b2366d8a4e93a04272254074eb9f9ddade64c9e4c3f1d5",
+    "bytes": 2638
+  },
+  {
+    "file": "analysis.json",
+    "sha256": "5ac2e4a18db568dd5d57578db411e40381c76671bbcdd367ad6c9dd3d572a4d1",
+    "bytes": 50793
+  },
+  {
+    "file": "raw_projection.json",
+    "sha256": "80b1a359f91efafaa341094f35cc08315a195b91f954eb4068025af1efb9d132",
+    "bytes": 4214947
+  },
+  {
+    "file": "bootstrap_precheck.json",
+    "sha256": "b6fec483fcf069504dce01d44fc67eac24f5a439864adf7cd5d619520f95f92e",
+    "bytes": 4443
+  },
+  {
+    "file": "analyze.py",
+    "sha256": "49b1be6aed9254cee6f3c90f3d36ceeb61d45ee3d45fbe688aa4da24b9507fc1",
+    "bytes": 5225
+  },
+  {
+    "file": "extra/result.json",
+    "sha256": "bf3206365aa6ab0c1e56714be87a456d68a3eb575bb0a2d9ad6435dca464a626",
+    "bytes": 5356
+  },
+  {
+    "file": "extra/IA5830002SNU_morning_Ls159.691_LT7.008_local_fields.npz",
+    "sha256": "ff1d8ded6f44c9296750eacc6eb3b8d54c28c4be104deecd8661e1a43c2b979f",
+    "bytes": 16121
+  },
+  {
+    "file": "extra/config.json",
+    "sha256": "1136515ff1f47e4a70b545d5052fb07d941f03d1d0d3eaa4d9c04a32ab1380b5",
+    "bytes": 3325
+  },
+  {
+    "file": "extra/RB-S14-THEMIS-atmospheric-residual-evidence.json",
+    "sha256": "526c42b8775df9b572c9d122fa5cbc8083e7695a92c914f499c20e7232ac0987",
+    "bytes": 3071
+  },
+  {
+    "file": "extra/IA6273002SNU_evening_Ls179.581_LT18.648_local_fields.npz",
+    "sha256": "773fcfa099fac9f20cac01920518d08ff65eb7290cde1868c5f51a8a4ff92958",
+    "bytes": 16086
+  },
+  {
+    "file": "extra/IA5986002SNU_evening_Ls166.545_LT18.618_local_fields.npz",
+    "sha256": "ec958df1d8dff6f77f1d46b67b2ee80bd1ace1c3fa7d0db11d2b81e1932e397f",
+    "bytes": 16248
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "gate": "RB-S14-THEMIS-ATMOSPHERIC-RESIDUAL-EVIDENCE",
+  "reviewed_date": "2026-07-30",
+  "status": "ENGINEERING_BRACKET_REQUIRED",
+  "sources": [
+    {
+      "title": "Simplified Automatic Atmospheric Correction for THEMIS Infrared Data",
+      "authors": [
+        "Cheng Ye",
+        "Cong Pan",
+        "Christopher S. Edwards",
+        "A. Deanne Rogers"
+      ],
+      "year": 2022,
+      "doi": "10.1029/2022EA002471",
+      "evidence_role": "Confirms that quantitative THEMIS surface analysis requires atmospheric correction and that corrected-emissivity uncertainty depends on the traditional THEMIS processing errors and TES surface-emissivity retrieval.",
+      "numeric_residual_applicable_to_current_nighttime_b1_b3_contrast": null
+    },
+    {
+      "title": "Atmospheric correction and surface spectral unit mapping using Thermal Emission Imaging System data",
+      "authors": [
+        "Joshua L. Bandfield",
+        "A. Deanne Rogers",
+        "Michael D. Smith",
+        "Philip R. Christensen"
+      ],
+      "year": 2004,
+      "doi": "10.1029/2004JE002289",
+      "evidence_role": "Confirms that THEMIS atmospheric-correction uncertainty was studied with synthetic images containing atmospheric variation plus random and systematic errors.",
+      "numeric_residual_applicable_to_current_nighttime_b1_b3_contrast": null
+    }
+  ],
+  "search_boundary": {
+    "paper_search_mcp": "Crossref, OpenAlex and CORE queries were run for THEMIS atmospheric correction, radiance uncertainty and residual error.",
+    "scite": "The configured literature endpoint returned INVALID_ARGUMENT for bounded searches and was not used as evidence.",
+    "full_text_boundary": "The open Ye et al. article was inspected through accessible publisher text excerpts. The fallback PDF returned by CORE was unrelated and was rejected. No transferable numerical residual for the present nighttime B1/B3 contrast was identified.",
+    "conclusion": "The literature supports the need for an atmospheric-correction sensitivity test but does not support a numerical residual distribution for this experiment."
+  },
+  "engineering_bracket": {
+    "quantity": "fractional perturbation of the synthetic B1-minus-B3 band-radiance contrast",
+    "amplitude_fractions": [
+      0.0,
+      0.02,
+      0.05,
+      0.1
+    ],
+    "profiles": [
+      "gray",
+      "spectral_tilt"
+    ],
+    "signed_nonzero_amplitudes": true,
+    "interpretation": "Identity plus signed 2%, 5% and 10% gray and wavelength-tilted contrast perturbations. The values are deterministic engineering stress settings chosen to expose sensitivity from modest through large perturbations; they are not measured residuals, probabilities or confidence limits."
+  },
+  "claim_boundary": "This evidence record authorizes only a deterministic residual-correction engineering bracket. It does not authorize claims about the true THEMIS atmospheric residual, its distribution, current-strip calibration, observed-radiance agreement, CO2-frost identity, gully activity selection or causality."
+}
